@@ -1,0 +1,653 @@
+	.DATA
+FONT5A:
+	.word	4,5,0,0
+	.long	>3714460
+FONT5B:
+	.word	4,5,0,0
+	.long	>3714500
+FONT5C:
+	.word	4,5,0,0
+	.long	>37145A0
+FONT5D:
+	.word	4,5,0,0
+	.long	>3714640
+FONT5E:
+	.word	4,5,0,0
+	.long	>37146E0
+FONT5F:
+	.word	4,5,0,0
+	.long	>3714780
+FONT5G:
+	.word	4,5,0,0
+	.long	>3714820
+FONT5H:
+	.word	4,5,0,0
+	.long	>37148C0
+FONT5I:
+	.word	1,5,0,0
+	.long	>3714960
+FONT5J:
+	.word	4,5,0,0
+	.long	>3714A00
+FONT5K:
+	.word	4,5,0,0
+	.long	>3714AA0
+FONT5L:
+	.word	4,5,0,0
+	.long	>3714B40
+FONT5M:
+	.word	5,5,0,0
+	.long	>3714BE0
+FONT5N:
+	.word	4,5,0,0
+	.long	>3714D20
+FONT5O:
+	.word	4,5,0,0
+	.long	>3714DC0
+FONT5P:
+	.word	4,5,0,0
+	.long	>3714E60
+FONT5Q:
+	.word	4,5,0,0
+	.long	>3714F00
+FONT5R:
+	.word	4,5,0,0
+	.long	>3714FA0
+FONT5S:
+	.word	4,5,0,0
+	.long	>3715040
+FONT5T:
+	.word	5,5,0,0
+	.long	>37150E0
+FONT5U:
+	.word	4,5,0,0
+	.long	>3715220
+FONT5V:
+	.word	5,5,0,0
+	.long	>37152C0
+FONT5W:
+	.word	5,5,0,0
+	.long	>3715400
+FONT5X:
+	.word	5,5,0,0
+	.long	>3715540
+FONT5Y:
+	.word	4,5,0,0
+	.long	>3715680
+FONT5Z:
+	.word	4,5,0,0
+	.long	>3715720
+FONT51:
+	.word	4,5,0,0
+	.long	>37157C0
+FONT52:
+	.word	4,5,0,0
+	.long	>3715860
+FONT53:
+	.word	4,5,0,0
+	.long	>3715900
+FONT54:
+	.word	4,5,0,0
+	.long	>37159A0
+FONT55:
+	.word	4,5,0,0
+	.long	>3715A40
+FONT56:
+	.word	4,5,0,0
+	.long	>3715AE0
+FONT57:
+	.word	4,5,0,0
+	.long	>3715B80
+FONT58:
+	.word	4,5,0,0
+	.long	>3715C20
+FONT59:
+	.word	4,5,0,0
+	.long	>3715CC0
+FONT50:
+	.word	4,5,0,0
+	.long	>3715D60
+FONT5PER:
+	.word	1,1,0,-4
+	.long	>3715E00
+FONT5EXC:
+	.word	1,6,0,1
+	.long	>3715E20
+FONT5MIN:
+	.word	4,1,0,0
+	.long	>3715EE0
+FONT5SLA:
+	.word	4,4,0,0
+	.long	>3715F00
+FONT5COLON:
+	.word	4,5,0,0
+	.long	>3715F80
+FONT5APOS:
+	.word	2,2,0,1
+	.long	>3716020
+FONT8A:
+	.word	6,8,0,0
+	.long	>3716060
+FONT8B:
+	.word	6,8,0,0
+	.long	>3716260
+FONT8C:
+	.word	6,8,0,0
+	.long	>3716460
+FONT8D:
+	.word	6,8,0,0
+	.long	>3716660
+FONT8E:
+	.word	6,8,0,0
+	.long	>3716860
+FONT8F:
+	.word	6,8,0,0
+	.long	>3716A60
+FONT8G:
+	.word	6,8,0,0
+	.long	>3716C60
+FONT8H:
+	.word	6,8,0,0
+	.long	>3716E60
+FONT8I:
+	.word	6,8,0,0
+	.long	>3717060
+FONT8J:
+	.word	6,8,0,0
+	.long	>3717260
+FONT8K:
+	.word	6,8,0,0
+	.long	>3717460
+FONT8L:
+	.word	6,8,0,0
+	.long	>3717660
+FONT8M:
+	.word	6,8,0,0
+	.long	>3717860
+FONT8N:
+	.word	6,8,0,0
+	.long	>3717A60
+FONT8O:
+	.word	6,8,0,0
+	.long	>3717C60
+FONT8P:
+	.word	6,8,0,0
+	.long	>3717E60
+FONT8Q:
+	.word	6,8,0,0
+	.long	>3718060
+FONT8R:
+	.word	6,8,0,0
+	.long	>3718260
+FONT8S:
+	.word	6,8,0,0
+	.long	>3718460
+FONT8T:
+	.word	6,8,0,0
+	.long	>3718660
+FONT8U:
+	.word	6,8,0,0
+	.long	>3718860
+FONT8V:
+	.word	6,8,0,0
+	.long	>3718A60
+FONT8W:
+	.word	6,8,0,0
+	.long	>3718C60
+FONT8X:
+	.word	6,8,0,0
+	.long	>3718E60
+FONT8Y:
+	.word	6,8,0,0
+	.long	>3719060
+FONT8Z:
+	.word	6,8,0,0
+	.long	>3719260
+FONT81:
+	.word	6,8,0,0
+	.long	>3719460
+FONT82:
+	.word	6,8,0,0
+	.long	>3719660
+FONT83:
+	.word	6,8,0,0
+	.long	>3719860
+FONT84:
+	.word	6,8,0,0
+	.long	>3719A60
+FONT85:
+	.word	6,8,0,0
+	.long	>3719C60
+FONT86:
+	.word	6,8,0,0
+	.long	>3719E60
+FONT87:
+	.word	6,8,0,0
+	.long	>371A060
+FONT88:
+	.word	6,8,0,0
+	.long	>371A260
+FONT89:
+	.word	6,8,0,0
+	.long	>371A460
+FONT80:
+	.word	6,8,0,0
+	.long	>371A660
+FONT8MIN:
+	.word	6,2,0,-3
+	.long	>371A860
+FONT8PLUS:
+	.word	6,6,0,-1
+	.long	>371A8E0
+FONT8ARRW:
+	.word	6,7,0,-1
+	.long	>371AA60
+FONT8EXC:
+	.word	2,9,0,1
+	.long	>371AC20
+FONT8QUEST:
+	.word	4,9,0,1
+	.long	>371AD40
+FONT8COLON:
+	.word	2,8,0,0
+	.long	>371AE60
+FONT8PER:
+	.word	2,2,0,-6
+	.long	>371AF60
+FONT8COMM:
+	.word	2,3,0,-6
+	.long	>371AFA0
+FONT8APOS:
+	.word	2,3,0,0
+	.long	>371B000
+FONT8LPAREN:
+	.word	2,8,0,0
+	.long	>371B060
+FONT8RPAREN:
+	.word	2,8,0,0
+	.long	>371B160
+FONT8SLA:
+	.word	6,8,0,0
+	.long	>371B260
+FONT8ASTR:
+	.word	5,7,-1,-1
+	.long	>371B460
+FONT8AND:
+	.word	6,8,0,0
+	.long	>371B620
+FONT8NUM:
+	.word	6,8,0,0
+	.long	>371B820
+FONT8DOLL:
+	.word	6,8,0,0
+	.long	>371BA20
+FONT8EQL:
+	.word	6,3,0,-3
+	.long	>371BC20
+FONT8POU:
+	.word	6,8,0,0
+	.long	>371BCE0
+FONT8SMCOL:
+	.word	2,8,-2,-1
+	.long	>371BEE0
+FONT8PERC:
+	.word	6,8,0,0
+	.long	>371BFE0
+FONT15A:
+	.word	12,15,0,0
+	.long	>371C1E0
+FONT15B:
+	.word	10,15,0,0
+	.long	>371C780
+FONT15C:
+	.word	12,15,0,0
+	.long	>371CD20
+FONT15D:
+	.word	12,15,0,0
+	.long	>371D2C0
+FONT15E:
+	.word	10,15,0,0
+	.long	>371D860
+FONT15F:
+	.word	10,15,0,0
+	.long	>371DE00
+FONT15G:
+	.word	12,15,0,0
+	.long	>371E3A0
+FONT15H:
+	.word	12,15,0,0
+	.long	>371E940
+FONT15I:
+	.word	3,15,0,0
+	.long	>371EEE0
+FONT15J:
+	.word	6,15,0,0
+	.long	>371F0C0
+FONT15K:
+	.word	12,15,0,0
+	.long	>371F480
+FONT15L:
+	.word	10,15,0,0
+	.long	>371FA20
+FONT15M:
+	.word	12,15,0,0
+	.long	>371FFC0
+FONT15N:
+	.word	12,15,0,0
+	.long	>3720560
+FONT15O:
+	.word	12,15,0,0
+	.long	>3720B00
+FONT15P:
+	.word	12,15,0,0
+	.long	>37210A0
+FONT15Q:
+	.word	12,15,0,0
+	.long	>3721640
+FONT15R:
+	.word	12,15,0,0
+	.long	>3721BE0
+FONT15S:
+	.word	12,15,0,0
+	.long	>3722180
+FONT15T:
+	.word	12,15,0,0
+	.long	>3722720
+FONT15U:
+	.word	12,15,0,0
+	.long	>3722CC0
+FONT15V:
+	.word	12,15,0,0
+	.long	>3723260
+FONT15W:
+	.word	12,15,0,0
+	.long	>3723800
+FONT15X:
+	.word	12,15,0,0
+	.long	>3723DA0
+FONT15Y:
+	.word	12,15,0,0
+	.long	>3724340
+FONT15Z:
+	.word	12,15,0,0
+	.long	>37248E0
+FONT15DOLL:
+	.word	12,15,0,0
+	.long	>3724E80
+FONT15COMMA:
+	.word	2,5,0,-12
+	.long	>3725420
+FONT15PER:
+	.word	3,3,0,-12
+	.long	>37254C0
+FONT15QUEST:
+	.word	8,16,0,1
+	.long	>3725520
+FONT15ARRW:
+	.word	12,9,0,-3
+	.long	>3725920
+FONT15COLON:
+	.word	3,15,0,0
+	.long	>3725C80
+FONT15PLUS:
+	.word	10,9,0,-3
+	.long	>3725E60
+FONT15APOS:
+	.word	2,5,0,0
+	.long	>37261C0
+FONT15LPAREN:
+	.word	4,15,0,0
+	.long	>3726260
+FONT15RPAREN:
+	.word	4,15,0,0
+	.long	>3726440
+FONT15EXC:
+	.word	3,16,0,1
+	.long	>3726620
+FONT15SLASH:
+	.word	10,15,0,0
+	.long	>3726820
+FONT15MINUS:
+	.word	10,2,0,-7
+	.long	>3726DC0
+FONT151:
+	.word	12,15,0,0
+	.long	>3726E80
+FONT152:
+	.word	12,15,0,0
+	.long	>3727420
+FONT153:
+	.word	12,15,0,0
+	.long	>37279C0
+FONT154:
+	.word	12,15,0,0
+	.long	>3727F60
+FONT155:
+	.word	12,15,0,0
+	.long	>3728500
+FONT156:
+	.word	12,15,0,0
+	.long	>3728AA0
+FONT157:
+	.word	12,15,0,0
+	.long	>3729040
+FONT158:
+	.word	12,15,0,0
+	.long	>37295E0
+FONT159:
+	.word	12,15,0,0
+	.long	>3729B80
+FONT150:
+	.word	12,15,0,0
+	.long	>372A120
+FONT20A:
+	.word	25,19,0,-2
+	.long	>372A6C0
+FONT20B:
+	.word	18,20,0,-1
+	.long	>372B760
+FONT20C:
+	.word	17,20,0,-1
+	.long	>372C3E0
+FONT20D:
+	.word	20,20,1,-1
+	.long	>372D060
+FONT20E:
+	.word	17,20,0,-1
+	.long	>372DCE0
+FONT20F:
+	.word	18,20,0,-1
+	.long	>372E960
+FONT20G:
+	.word	21,21,0,0
+	.long	>372F5E0
+FONT20H:
+	.word	23,20,0,-1
+	.long	>37305A0
+FONT20I:
+	.word	8,20,0,-1
+	.long	>37314A0
+FONT20J:
+	.word	22,20,0,-1
+	.long	>37319A0
+FONT20K:
+	.word	24,20,0,-1
+	.long	>37328A0
+FONT20L:
+	.word	19,21,0,0
+	.long	>37337A0
+FONT20M:
+	.word	29,21,0,-1
+	.long	>37344C0
+FONT20N:
+	.word	21,21,0,-1
+	.long	>37359C0
+FONT20O:
+	.word	24,20,0,-1
+	.long	>3736980
+FONT20o:
+	.word	24,20,0,4
+	.long	>3736980
+FONT20P:
+	.word	22,20,0,-1
+	.long	>3737880
+FONT20Q:
+	.word	25,22,0,-1
+	.long	>3738780
+FONT20R:
+	.word	22,20,0,-1
+	.long	>3739AC0
+FONT20S:
+	.word	17,24,0,0
+	.long	>373A9C0
+FONT20T:
+	.word	23,20,0,-1
+	.long	>373B8C0
+FONT20U:
+	.word	21,20,0,-1
+	.long	>373C7C0
+FONT20V:
+	.word	25,20,0,-1
+	.long	>373D6C0
+FONT20W:
+	.word	29,21,0,-1
+	.long	>373E840
+FONT20X:
+	.word	27,21,0,0
+	.long	>373FD40
+FONT20Y:
+	.word	27,22,0,1
+	.long	>3740FA0
+FONT20Z:
+	.word	25,20,0,0
+	.long	>37422E0
+FONT201:
+	.word	12,20,0,0
+	.long	>3743460
+FONT202:
+	.word	18,21,0,0
+	.long	>3743BE0
+FONT203:
+	.word	13,23,0,0
+	.long	>3744900
+FONT204:
+	.word	22,20,0,-1
+	.long	>3745480
+FONT205:
+	.word	17,21,0,0
+	.long	>3746380
+FONT206:
+	.word	19,21,0,0
+	.long	>37470A0
+FONT207:
+	.word	22,20,0,-1
+	.long	>3747DC0
+FONT208:
+	.word	21,21,0,0
+	.long	>3748CC0
+FONT209:
+	.word	19,23,0,0
+	.long	>3749C80
+FONT200:
+	.word	24,20,0,-1
+	.long	>374AAE0
+FONT20EXC:
+	.word	5,22,0,1
+	.long	>374B9E0
+FONT20PER:
+	.word	6,5,-1,-17
+	.long	>374BF60
+FONT20COM:
+	.word	5,10,0,-16
+	.long	>374C0A0
+FONT20LPAREN:
+	.word	7,26,0,2
+	.long	>374C320
+FONT20RPAREN:
+	.word	7,26,0,2
+	.long	>374C9A0
+FONT20SLA:
+	.word	22,22,0,0
+	.long	>374D020
+FONT20MIN:
+	.word	22,3,0,-9
+	.long	>374E0A0
+FONT20BACKSP:
+	.word	24,19,0,-2
+	.long	>374E2E0
+FONT20QUEST:
+	.word	14,24,0,3
+	.long	>374F120
+FONT20COLON:
+	.word	7,20,0,0
+	.long	>374FD20
+FON15and:
+	.word	13,15,0,0
+	.long	>3750220
+FON15less:
+	.word	6,9,-2,-4
+	.long	>37509A0
+FON15line:
+	.word	11,3,0,-6
+	.long	>3750BE0
+FON15apos1:
+	.word	4,6,0,0
+	.long	>3750D00
+FON15ast:
+	.word	7,7,-2,-3
+	.long	>3750DC0
+FON15brackl:
+	.word	5,19,0,0
+	.long	>3750F80
+FON15brackr:
+	.word	5,19,0,0
+	.long	>3751440
+FON15break:
+	.word	2,15,0,0
+	.long	>3751900
+FON15carr:
+	.word	9,5,0,0
+	.long	>3751AE0
+FON15engPOUN:
+	.word	11,15,0,0
+	.long	>3751CC0
+FON15equal:
+	.word	7,8,-2,-4
+	.long	>3752260
+FON15more:
+	.word	6,9,-3,-4
+	.long	>3752460
+FON15paren2l:
+	.word	7,19,0,2
+	.long	>37526A0
+FON15paren2r:
+	.word	7,19,0,2
+	.long	>3752B60
+FON15perc:
+	.word	13,15,0,0
+	.long	>3753020
+FON15poun:
+	.word	12,10,0,-2
+	.long	>37537A0
+FON15quote:
+	.word	10,6,0,1
+	.long	>3753B60
+FON15rquote:
+	.word	10,6,0,1
+	.long	>3753DA0
+FON15semicol:
+	.word	4,13,0,-2
+	.long	>3753FE0
+RD15SP:
+	.word	13,13,0,0
+	.long	>3754180
+RD15RUB:
+	.word	20,16,0,0
+	.long	>3754800
+RD15END:
+	.word	21,16,0,0
+	.long	>3755200
+FON15CR:
+	.word	15,11,0,0
+	.long	>3755E00
+	.TEXT

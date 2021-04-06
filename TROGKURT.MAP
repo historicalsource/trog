@@ -1,0 +1,658 @@
+*****************************************************
+GSP COFF Linker             , Version 3.20   
+*****************************************************
+Fri Aug 31 10:06:40 1990
+
+OUTPUT FILE NAME:   <f:\video\trog\TROGKURT.rlo>
+ENTRY POINT SYMBOL: 0
+
+
+MEMORY CONFIGURATION
+
+           name      origin     length     attributes
+         --------   --------   ---------   ----------
+         SCRATCH    01000000   000100000      RWIX
+         IROM       02000000   000400000      RWIX
+         ROM        ffe00000   000200000      RWIX
+         TRAP31     fffffc00   000000400      RWIX
+
+
+SECTION ALLOCATION MAP
+
+ output                                  attributes/
+section   page    origin      length       input sections
+--------  ----  ----------  ----------   ----------------
+.bss       0    01000000    00000b70     UNINITIALIZED
+                  01000000    00000070     TROGSCOR.OBJ (.bss)
+                  01000070    00000140     TROGATT.OBJ (.bss)
+                  010001b0    00000140     TROGMENU.OBJ (.bss)
+                  010002f0    00000010     TROGJUNK.OBJ (.bss)
+                  01000300    00000260     TROGHSTD.OBJ (.bss)
+                  01000560    00000200     TROGCOIN.OBJ (.bss)
+                  01000760    00000130     TROGCAVE.OBJ (.bss)
+                  01000890    00000200     TROGCAT.OBJ (.bss)
+                  01000a90    000000e0     TROGDTST.OBJ (.bss)
+
+.text      0    ffe00000    00076440     
+                  ffe00000    00009570     TROGSCOR.OBJ (.text)
+                  ffe09570    0000ac00     TROGATT.OBJ (.text)
+                  ffe14170    0001a600     TROGMENU.OBJ (.text)
+                  ffe2e770    00001d10     TROGJUNK.OBJ (.text)
+                  ffe30480    000072d0     TROGHSTD.OBJ (.text)
+                  ffe37750    000082d0     TROGCOIN.OBJ (.text)
+                  ffe3fa20    00000c50     TROGFADE.OBJ (.text)
+                  ffe40670    0000fb00     TROGCAVE.OBJ (.text)
+                  ffe50170    00004510     TROGCAT.OBJ (.text)
+                  ffe54680    000042e0     TROGHAUS.OBJ (.text)
+                  ffe58960    00001a30     TROGWORD.OBJ (.text)
+                  ffe5a390    00002050     SYSFONT.OBJ (.text)
+                  ffe5c3e0    00001220     TROGDUTL.OBJ (.text)
+                  ffe5d600    00013210     TROGDTST.OBJ (.text)
+                  ffe70810    00005c30     TROGADJ.OBJ (.text)
+
+.data      0    ffe76440    00013a80     
+                  ffe76440    00001120     TROGSCOR.OBJ (.data)
+                  ffe77560    00001080     TROGATT.OBJ (.data)
+                  ffe785e0    00002940     TROGCAVE.OBJ (.data)
+                  ffe7af20    0000efa0     TROGADJ.OBJ (.data)
+
+VECTORS    0    00000000    00000000     UNINITIALIZED
+
+IMAGES     0    00000000    00000000     UNINITIALIZED
+
+FIXED      0    00000000    00000000     UNINITIALIZED
+
+OFIXED     0    00000000    00000000     UNINITIALIZED
+
+NFIXED     0    00000000    00000000     UNINITIALIZED
+
+.BSS       0    00000000    00000000     UNINITIALIZED
+
+.TEXT      0    00000000    00000000     UNINITIALIZED
+
+.DATA      0    00000000    00000000     UNINITIALIZED
+
+
+GLOBAL SYMBOLS
+
+address  name                             address  name
+-------- ----                             -------- ----
+ffe35700 ADD_HSHOLD                       00000015 CS_ENTS
+ffe2fb50 ADJ_PAGE                         01000070 STORY_MODE
+UNDEFED  ALIGNOBJ                         01000170 ON_CRED
+UNDEFED  ALLOFF                           010002d0 LASTCOLOR
+UNDEFED  ALLOW_CONTINUE                   01000300 CHAR_PLOT
+ffe30480 ALL_TAB                          01000340 CHAR_SCORE
+UNDEFED  ANI                              01000530 ON_HSTD
+ffe1ed60 ANY_BUT                          01000600 COINFLAG
+UNDEFED  APLAYDONE                        01000610 GAMEUNITS
+ffe09570 ATTRACT_MODE                     01000680 OCTO_FLAG
+ffe32e40 ATT_HSTD                         01000b20 FORCEDIP
+ffe09fd0 ATT_MODE_GAME_OVER               ffe00000 HIGHSCORECHECK
+ffe09870 ATT_MODE_HSTD                    ffe00db0 SCIDONE
+ffe2f0d0 AUD                              ffe01500 LOOKSTICK
+ffe2f1e0 AUD1                             ffe018d0 LOOKFIRE
+UNDEFED  AUTOEOFF                         ffe02f10 SCORPROC
+ffe076f0 AWARD_EXTRAS                     ffe03fe0 GAME_OVER_FLY
+UNDEFED  BACKGROUND1                      ffe04950 SCORAREA
+UNDEFED  BAK2MODS                         ffe049a0 P0_P1_SCORE
+UNDEFED  BAKLST                           ffe04aa0 SCOREHILITE
+UNDEFED  BAKMODS                          ffe04c10 MARQUEE
+UNDEFED  BALLYMID                         ffe04c90 G_CRED
+UNDEFED  BARL2                            ffe054d0 ISLAND_NUM
+UNDEFED  BART2                            ffe06230 UPDSL
+ffe066a0 BCDADD                           ffe066a0 BCDADD
+ffe20390 BEEP_1                           ffe06870 SCORE
+UNDEFED  BGND_UD1                         ffe06a20 SCORE_IF_ACTIVE
+UNDEFED  BGND_UD2                         ffe07030 OUTSCR
+ffe70a20 BINBCD                           ffe074e0 OUTBOZO
+ffe16f40 BLASTMESS                        ffe076f0 AWARD_EXTRAS
+UNDEFED  BLNKAREA                         ffe078e0 SUBLIFE
+ffe24770 BLNKHELP                         ffe07a10 OUTLIVES
+UNDEFED  BLOOPATAB                        ffe07ec0 SENDOBJ
+UNDEFED  BLOOPHED                         ffe07f50 SEND2SCR
+UNDEFED  BLUE16                           ffe083a0 SCOREOBJ
+UNDEFED  BOULDER1                         ffe083e0 SCORE2XOBJ
+ffe781a0 BSPIKEFALL                       ffe09570 ATTRACT_MODE
+UNDEFED  BSPSHP0F10                       ffe09870 ATT_MODE_HSTD
+UNDEFED  BSPSHP0F11                       ffe09de0 HSTD_ENTRY_POINT
+UNDEFED  BSPSHP0F12                       ffe09ed0 CRED_ENTRY_POINT
+UNDEFED  BSPSHP0F13                       ffe09fd0 ATT_MODE_GAME_OVER
+UNDEFED  BSPSHP0F3                        ffe11190 OCTO_PAGE
+UNDEFED  BSPSHP0F4                        ffe11900 CREDITS_TEXT
+UNDEFED  BSPSHP0F6                        ffe137d0 DRAW_P_BORDER
+UNDEFED  BSPSHP0F7                        ffe14170 DIAG
+UNDEFED  BSPSHP0F8                        ffe157c0 CPU_RET
+UNDEFED  BSPSHP0F9                        ffe16f40 BLASTMESS
+UNDEFED  BSPSTP3                          ffe1a5d0 OCTO_PRINT_AUDS
+UNDEFED  BSPTORP2                         ffe1a790 OCTO_PRINT_AUDS_2
+UNDEFED  BSPWP4F1                         ffe1cec0 GET_PLAYS
+UNDEFED  BSPWP4F2                         ffe1d0d0 SET_AVGWAVE
+UNDEFED  BSPWP4F3                         ffe1ed60 ANY_BUT
+UNDEFED  BSPWP4F4                         ffe1ede0 WAIT_BUT
+UNDEFED  BSPWP4F5                         ffe1f110 CKTEST
+UNDEFED  BSPWP4F6                         ffe1f260 CKDIAG
+UNDEFED  BSPWP4F7                         ffe1fab0 MENU_TOP
+UNDEFED  BTRBEARD                         ffe20070 COL_INST
+UNDEFED  BTRBLINK1                        ffe20390 BEEP_1
+UNDEFED  BTRBLINK2                        ffe20490 WOLF
+UNDEFED  BTRBROW                          ffe20510 UHOH
+UNDEFED  BTREYE                           ffe20680 B_MENU
+UNDEFED  BTRHAIR                          ffe22710 ST_STICK
+UNDEFED  BTRHAND1                         ffe22810 GETSTICK
+UNDEFED  BTRHAND2                         ffe24550 STD_BORD
+UNDEFED  BTRHAND5                         ffe24770 BLNKHELP
+UNDEFED  BTRHED                           ffe248c0 P_FORK
+UNDEFED  BTRTEETH                         ffe24960 H_SLAVE
+UNDEFED  BUMP                             ffe26960 ROM_NAME
+ffe5fee0 BURNIN                           ffe278a0 MESS_MM
+UNDEFED  BUYWIN_Z                         ffe2ecf0 GET_AUD
+ffe20680 B_MENU                           ffe2ee30 STORE_AUDIT
+UNDEFED  CALLPLAY                         ffe2ef30 CLR_AUDR
+ffe50170 CATAPULT_START                   ffe2f020 KILL_AUD
+ffe3a340 CAT_A0                           ffe2f0d0 AUD
+ffe40670 CAVESHOW1                        ffe2f1e0 AUD1
+ffe40820 CAVESHOW2                        ffe2f260 CLR_AUD
+ffe408a0 CAVESHOW3                        ffe2f310 CMOS_VAL
+ffe40920 CAVESHOW4                        ffe2f370 FORM_ADC
+ffe409a0 CAVESHOW5                        ffe2f540 F_ADC_S
+ffe40a20 CAVESHOW6                        ffe2f620 GET_ADJ
+UNDEFED  CAVSIN                           ffe2f7b0 PUT_ADJ
+ffe3b7c0 CCOIN                            ffe2fb50 ADJ_PAGE
+UNDEFED  CHANGE_PAL                       ffe2fbf0 DEF_PAGE
+UNDEFED  CHANGOID                         ffe2fcb0 FAC_SET
+01000300 CHAR_PLOT                        ffe2ff80 CMOSUNLOCK
+01000340 CHAR_SCORE                       ffe30010 CMOSLOCK
+ffe65930 CHECKDIPFREE                     ffe30480 ALL_TAB
+ffe3b550 CHECKFREE                        ffe30500 TOD_TAB
+ffe30e00 CHECK_INITS                      ffe30580 DEC_HSR
+ffe5cc50 CIRCLE                           ffe30710 INIT_HSR
+ffe1f260 CKDIAG                           ffe308f0 GET_HSC
+ffe74460 CKDIP                            ffe30b50 CKHSTD
+ffe30b50 CKHSTD                           ffe30c80 TRYADD
+ffe1f110 CKTEST                           ffe30e00 CHECK_INITS
+ffe35300 CLEAR_HSCOLORS                   ffe31460 GET_HSCR
+UNDEFED  CLRALLPD                         ffe31870 PT_ENTRY
+UNDEFED  CLRBGND                          ffe31900 ROM_PTRS
+UNDEFED  CLRPDATA                         ffe319d0 SET_PAGE
+UNDEFED  CLRPLAY                          ffe31b50 INIT_TAB
+ffe2ef30 CLR_AUDR                         ffe31c60 INIT_TB
+ffe2f260 CLR_AUD                          ffe31f80 VAL_TAB
+UNDEFED  CLR_SCRN                         ffe32800 RC_BYTE
+UNDEFED  CLSCRACH                         ffe32850 WC_BYTE
+ffe30010 CMOSLOCK                         ffe32870 RC_BYTEI
+ffe2ff80 CMOSUNLOCK                       ffe328d0 RC_WORD
+ffe2f310 CMOS_VAL                         ffe329f0 RC_WORDI
+01000600 COINFLAG                         ffe32a50 RC_LONG
+ffe3f020 COININT                          ffe32b70 RC_LONGI
+ffe64040 COLORBAR                         ffe32bd0 WC_BYTEI
+UNDEFED  COLOR_START                      ffe32c20 WC_WORD
+ffe20070 COL_INST                         ffe32ce0 WC_WORDI
+ffe63e00 CONV_PLOT                        ffe32d30 WC_LONG
+ffe39240 COPYRIGHTINIT                    ffe32df0 WC_LONGI
+UNDEFED  COPY                             ffe32e40 ATT_HSTD
+ffe157c0 CPU_RET                          ffe35300 CLEAR_HSCOLORS
+UNDEFED  CREATE_OBJ                       ffe35630 INIT_HSHOLD
+UNDEFED  CREDITBGND                       ffe35700 ADD_HSHOLD
+ffe11900 CREDITS_TEXT                     ffe35960 EMPTY_HSHOLD
+ffe38100 CREDIT_SCREEN                    ffe38100 CREDIT_SCREEN
+ffe09ed0 CRED_ENTRY_POINT                 ffe39240 COPYRIGHTINIT
+ffe3cb00 CRED_P                           ffe39320 LOGOINIT
+ffe3b4a0 CRED_STRING                      ffe39d60 GET_CSTR
+ffe3d490 CR_BOTH                          ffe3a340 CAT_A0
+ffe3d870 CR_CONTP                         ffe3a400 STRCAT
+ffe3d6f0 CR_STRTP                         ffe3b4a0 CRED_STRING
+UNDEFED  CSHOW6_FLAG                      ffe3b550 CHECKFREE
+00000015 CS_ENTS                          ffe3b5c0 SCOIN
+UNDEFED  CTRANBACK                        ffe3b6c0 XCOIN
+UNDEFED  CURPAL                           ffe3b740 LCOIN
+UNDEFED  CYCLE16                          ffe3b7c0 CCOIN
+ffe30580 DEC_HSR                          ffe3b840 RCOIN
+ffe2fbf0 DEF_PAGE                         ffe3cb00 CRED_P
+UNDEFED  DELETE_OBJ                       ffe3d3a0 NO_CREDS
+UNDEFED  DELETE_PAL                       ffe3d490 CR_BOTH
+UNDEFED  DELOBJ                           ffe3d6f0 CR_STRTP
+UNDEFED  DELSHAD                          ffe3d870 CR_CONTP
+ffe60060 DIAGCPUTEST                      ffe3d9f0 P_START
+ffe14170 DIAG                             ffe3dbd0 P_CONT
+ffe58bf0 DICT_LOOKUP                      ffe3dec0 TIMEINIT
+UNDEFED  DINOLOAD                         ffe3df60 TIMEINT
+UNDEFED  DINOTURN                         ffe3f020 COININT
+UNDEFED  DINOWXFER                        ffe3f7a0 SLAM
+UNDEFED  DINO_ADD_VEL                     ffe3fa20 FADEALL
+UNDEFED  DINO_CENTER                      ffe3fa50 FADEIN
+UNDEFED  DINO_FRANIM                      ffe3fab0 FADEOUT
+UNDEFED  DINO_START                       ffe3fd40 FADE_ONLY
+UNDEFED  DINO_VEL                         ffe40430 FadeIn
+ffe864d0 DIPCOINTAB                       ffe40560 FadeOut
+UNDEFED  DIPINIT                          ffe40670 CAVESHOW1
+ffe644e0 DIPTEST                          ffe40820 CAVESHOW2
+UNDEFED  DISPLAYON                        ffe408a0 CAVESHOW3
+UNDEFED  DMAN                             ffe40920 CAVESHOW4
+ffe74b20 DO_ADJH                          ffe409a0 CAVESHOW5
+ffe137d0 DRAW_P_BORDER                    ffe40a20 CAVESHOW6
+ffe5d560 DSCRCLR                          ffe50170 CATAPULT_START
+UNDEFED  DTIME                            ffe54680 HOUSE_START
+UNDEFED  DUMCOLL                          ffe552a0 FB_HOUSE
+UNDEFED  DUMCRETS                         ffe57070 ROCK_START
+UNDEFED  DUMSRETS                         ffe57da0 HOUSE_TABLE_1
+UNDEFED  DUXPAL                           ffe57e60 HOUSE_TABLE_2
+UNDEFED  EGG_DIVISOR                      ffe57fc0 HOUSE_TABLE_3
+UNDEFED  EGG_START                        ffe58240 TROGHENG1
+ffe35960 EMPTY_HSHOLD                     ffe582e0 TROGSKULL1
+UNDEFED  ENEMIES                          ffe58380 TROGSKULL2
+UNDEFED  ENEMY_START                      ffe58460 ROCK_TABLE_1
+UNDEFED  ETRANBACK                        ffe58580 ZIG_TABLE_1
+UNDEFED  EXECLED                          ffe585e0 ZIG_TABLE_2
+UNDEFED  EXEC_LP                          ffe58780 PALM_TABLE_1
+UNDEFED  EXISTP                           ffe58960 LM_XFINIS
+ffe2fcb0 FAC_SET                          ffe58a70 L_XMESS
+ffe3fa20 FADEALL                          ffe58bf0 DICT_LOOKUP
+ffe3fa50 FADEIN                           ffe5ae90 SYSFONT
+ffe3fab0 FADEOUT                          ffe5c3e0 INITCOLR
+UNDEFED  FADE_DOWN                        ffe5c4c0 POINT
+ffe3fd40 FADE_ONLY                        ffe5c550 RECTANGLE
+UNDEFED  FAST_TIME                        ffe5c610 HVLINE
+ffe552a0 FB_HOUSE                         ffe5c7a0 STRING
+UNDEFED  FILLAREA                         ffe5ca70 STRINGCENTER
+UNDEFED  FILL_SCRN                        ffe5cc50 CIRCLE
+UNDEFED  FINDPAL                          ffe5d560 DSCRCLR
+UNDEFED  FIND_CLOSE_CPNT                  ffe5d600 POWERCMOS
+UNDEFED  FIND_CLOSE_MPNT                  ffe5fee0 BURNIN
+UNDEFED  FIND_OPEN_CPNT                   ffe60060 DIAGCPUTEST
+UNDEFED  FIND_SAFEST                      ffe62f20 POWERTST
+UNDEFED  FIREBALL_XFER                    ffe63e00 CONV_PLOT
+UNDEFED  FIREINIT                         ffe64040 COLORBAR
+UNDEFED  FIRE_ANIMII                      ffe644e0 DIPTEST
+UNDEFED  FIRE_SND                         ffe65930 CHECKDIPFREE
+UNDEFED  FIXED3                           ffe66090 READ_DIP
+UNDEFED  FLAMESM2                         ffe662d0 SWITCHTEST
+UNDEFED  FLOWERINIT                       ffe70810 GET_CSPT
+01000b20 FORCEDIP                         ffe70a20 BINBCD
+ffe2f370 FORM_ADC                         ffe70d10 GO_ADJ
+UNDEFED  FRANIM                           ffe74460 CKDIP
+UNDEFED  FREEOBJ                          ffe744e0 SET_COIN_ADJ
+ffe869f0 FRENCH_1                         ffe74b20 DO_ADJH
+ffe86a40 FRENCH_2                         ffe76b40 P1BOXBONEh
+ffe86a90 FRENCH_3                         ffe76bc0 P1BOXBONEv
+ffe86ae0 FRENCH_4                         ffe781a0 BSPIKEFALL
+ffe867f0 FRENCH_ELECTITLE                 ffe7cc00 MEN_ADJ
+ffe2f540 F_ADC_S                          ffe864d0 DIPCOINTAB
+ffe40430 FadeIn                           ffe866f0 USA_1
+ffe40560 FadeOut                          ffe86720 USA_2
+UNDEFED  GAMEFIX                          ffe86750 USA_3
+UNDEFED  GAMEOVER                         ffe86780 USA_4
+UNDEFED  GAMERASE                         ffe867b0 USA_ELECTITLE
+01000610 GAMEUNITS                        ffe867f0 FRENCH_ELECTITLE
+UNDEFED  GAME_DIFFICULTY                  ffe86850 GERMAN_ELECTITLE
+UNDEFED  GAME_INTRO                       ffe868b0 GERMAN_1
+ffe03fe0 GAME_OVER_FLY                    ffe86900 GERMAN_2
+UNDEFED  GAME_STATE                       ffe86950 GERMAN_3
+UNDEFED  GANIOF                           ffe869a0 GERMAN_4
+UNDEFED  GEM1                             ffe869f0 FRENCH_1
+UNDEFED  GEM2                             ffe86a40 FRENCH_2
+ffe868b0 GERMAN_1                         ffe86a90 FRENCH_3
+ffe86900 GERMAN_2                         ffe86ae0 FRENCH_4
+ffe86950 GERMAN_3                         UNDEFED  CSHOW6_FLAG
+ffe869a0 GERMAN_4                         UNDEFED  SMOKESTAR41
+ffe86850 GERMAN_ELECTITLE                 UNDEFED  RESTP0
+UNDEFED  GETA10                           UNDEFED  VBONCR1
+UNDEFED  GETA11                           UNDEFED  bfur
+UNDEFED  GETANIXY_PACKED                  UNDEFED  VBONCR3
+UNDEFED  GETANIXY                         UNDEFED  DMAN
+UNDEFED  GETBPAL                          UNDEFED  VOBLIT1
+UNDEFED  GETCENT                          UNDEFED  P1VBON
+UNDEFED  GETCPNT                          UNDEFED  SPSQP4FF1
+UNDEFED  GETFPAL                          UNDEFED  SPSQP4FF2
+UNDEFED  GETINIT_G                        UNDEFED  TRBOP0F1
+UNDEFED  GETOBJ                           UNDEFED  SPWAP4F1
+UNDEFED  GETPRC                           UNDEFED  SPSQP4FF3
+ffe22810 GETSTICK                         UNDEFED  PRCLSP
+ffe2f620 GET_ADJ                          UNDEFED  BLUE16
+ffe2ecf0 GET_AUD                          UNDEFED  START_FIRE_LR
+ffe70810 GET_CSPT                         UNDEFED  CLRPLAY
+ffe39d60 GET_CSTR                         UNDEFED  SPLAYER_NUM
+ffe31460 GET_HSCR                         UNDEFED  COPY
+ffe308f0 GET_HSC                          UNDEFED  STRLNRMS
+ffe1cec0 GET_PLAYS                        UNDEFED  WHLATAB
+ffe70d10 GO_ADJ                           UNDEFED  SYSCOPY
+UNDEFED  GPALOBJSTF                       UNDEFED  PALSET
+UNDEFED  GPLAYD                           UNDEFED  PALRAM
+UNDEFED  GPLAYNUM                         UNDEFED  LITTLELOG
+UNDEFED  GRAMINIT                         UNDEFED  STRNGRAM
+UNDEFED  GSAGOF                           UNDEFED  CYCLE16
+UNDEFED  GSCRNREL                         UNDEFED  trogcol
+UNDEFED  GWENATAB                         UNDEFED  DELETE_PAL
+UNDEFED  GWENHED                          UNDEFED  TROGWOBBLE_D
+ffe04c90 G_CRED                           UNDEFED  GAMEFIX
+UNDEFED  HEXTOASC                         UNDEFED  TROG_CLUB_ATAB
+ffe00000 HIGHSCORECHECK                   UNDEFED  TROGCAVE1
+ffe54680 HOUSE_START                      UNDEFED  RANGRAND
+ffe57da0 HOUSE_TABLE_1                    UNDEFED  bflesh
+ffe57e60 HOUSE_TABLE_2                    UNDEFED  TROGCAVSIN
+ffe57fc0 HOUSE_TABLE_3                    UNDEFED  GETINIT_G
+UNDEFED  HSINTRAM                         UNDEFED  BOULDER1
+ffe09de0 HSTD_ENTRY_POINT                 UNDEFED  ETRANBACK
+UNDEFED  HTOHXASC                         UNDEFED  FIREBALL_XFER
+ffe5c610 HVLINE                           UNDEFED  CHANGE_PAL
+ffe24960 H_SLAVE                          UNDEFED  IND_BONE
+UNDEFED  IDATAEND                         UNDEFED  STRANBACK
+UNDEFED  IDATALEN                         UNDEFED  INSERT_OBJ_SUPP
+UNDEFED  IND_BONE                         UNDEFED  SKULL
+ffe5c3e0 INITCOLR                         UNDEFED  VTRANBACK
+UNDEFED  INITDATA                         UNDEFED  DUMSRETS
+ffe35630 INIT_HSHOLD                      UNDEFED  ZIG1
+ffe30710 INIT_HSR                         UNDEFED  WTRANBACK
+ffe31b50 INIT_TAB                         UNDEFED  ALIGNOBJ
+ffe31c60 INIT_TB                          UNDEFED  TROGWXFER
+UNDEFED  INSERT_OBJ_SUPP                  UNDEFED  RADI3
+UNDEFED  INSERT_OBJ                       UNDEFED  RADI4
+UNDEFED  INSERT_SUPP                      UNDEFED  DINOWXFER
+UNDEFED  INSOBJ                           UNDEFED  RADI1
+UNDEFED  IRQLED                           UNDEFED  RADI2
+UNDEFED  IRQSKYE                          UNDEFED  START_INVINCIBILITY
+ffe054d0 ISLAND_NUM                       UNDEFED  SET_MZPOS
+UNDEFED  IS_DINO_DEAD_A0                  UNDEFED  GETANIXY_PACKED
+UNDEFED  KILALL                           UNDEFED  TRANBACK
+UNDEFED  KILALLA8                         UNDEFED  CREATE_OBJ
+UNDEFED  KILBOBJ                          UNDEFED  GETA10
+ffe2f020 KILL_AUD                         UNDEFED  GETA11
+UNDEFED  KILL_INVINCIBILITY               UNDEFED  HSINTRAM
+UNDEFED  KILOBJ_ALL                       UNDEFED  POWERRET
+UNDEFED  KILOBJ                           UNDEFED  CLSCRACH
+010002d0 LASTCOLOR                        UNDEFED  INITDATA
+ffe3b740 LCOIN                            UNDEFED  EXECLED
+UNDEFED  LITTLELOG                        UNDEFED  CLRALLPD
+UNDEFED  LM_FINIS                         UNDEFED  IRQLED
+UNDEFED  LM_PRINTF                        UNDEFED  EXEC_LP
+UNDEFED  LM_SETUP                         UNDEFED  IDATAEND
+ffe58960 LM_XFINIS                        UNDEFED  HTOHXASC
+ffe39320 LOGOINIT                         UNDEFED  SINTRAM
+ffe018d0 LOOKFIRE                         UNDEFED  WDISTAB
+ffe01500 LOOKSTICK                        UNDEFED  WDOGRAM
+UNDEFED  L_MESS                           UNDEFED  PCMOSRET
+ffe58a70 L_XMESS                          UNDEFED  TROGHED
+UNDEFED  MAIN_INIT                        UNDEFED  GEM1
+UNDEFED  MAKE_OBJ                         UNDEFED  GEM2
+ffe04c10 MARQUEE                          UNDEFED  KILL_INVINCIBILITY
+ffe1fab0 MENU_TOP                         UNDEFED  PALM1
+ffe7cc00 MEN_ADJ                          UNDEFED  PALM2
+ffe278a0 MESS_MM                          UNDEFED  trancave2
+UNDEFED  MULTI_MAKE                       UNDEFED  IDATALEN
+UNDEFED  MYOINIT                          UNDEFED  DIPINIT
+ffe3d3a0 NO_CREDS                         UNDEFED  MAIN_INIT
+UNDEFED  NPLAYERS                         UNDEFED  CTRANBACK
+UNDEFED  OBJECTS_OFF                      UNDEFED  trancave1
+UNDEFED  OBJECTS_ON                       UNDEFED  STRINGF
+UNDEFED  OBJEXP32                         UNDEFED  SPBOING01
+UNDEFED  OBJLST                           UNDEFED  OING3
+UNDEFED  OBJ_OFF                          UNDEFED  DINOTURN
+UNDEFED  OBJ_ON                           UNDEFED  OING4
+UNDEFED  OBJ_TO_PNT                       UNDEFED  FIND_CLOSE_CPNT
+01000680 OCTO_FLAG                        UNDEFED  OING1
+ffe11190 OCTO_PAGE                        UNDEFED  OING2
+ffe1a790 OCTO_PRINT_AUDS_2                UNDEFED  OING5
+ffe1a5d0 OCTO_PRINT_AUDS                  UNDEFED  TOMOVE
+UNDEFED  OGPIT11                          UNDEFED  TROG_SHADOW_UPDATE
+UNDEFED  OING1                            UNDEFED  SET_ZPOS
+UNDEFED  OING2                            UNDEFED  BUMP
+UNDEFED  OING3                            UNDEFED  FIND_OPEN_CPNT
+UNDEFED  OING4                            UNDEFED  SMACK_SCREEN
+UNDEFED  OING5                            UNDEFED  FIND_SAFEST
+UNDEFED  ONESND                           UNDEFED  TRBOP0F4
+01000170 ON_CRED                          UNDEFED  TRBOP0F5
+01000530 ON_HSTD                          UNDEFED  RANDOM
+ffe074e0 OUTBOZO                          UNDEFED  TRBOP0F2
+ffe07a10 OUTLIVES                         UNDEFED  FADE_DOWN
+ffe07030 OUTSCR                           UNDEFED  TRBOP0F3
+UNDEFED  OWINDOW                          UNDEFED  SEE_STARS
+ffe049a0 P0_P1_SCORE                      UNDEFED  gray15
+ffe76b40 P1BOXBONEh                       UNDEFED  CAVSIN
+ffe76bc0 P1BOXBONEv                       UNDEFED  IS_DINO_DEAD_A0
+UNDEFED  P1DATA                           UNDEFED  TREATP4F8
+UNDEFED  P1VBON                           UNDEFED  WHEEL410
+UNDEFED  P1W1DINO                         UNDEFED  TREATP0F8
+UNDEFED  P2DATA                           UNDEFED  SMACK_CNT
+UNDEFED  P2W1DINO                         UNDEFED  INSERT_SUPP
+UNDEFED  P3DATA                           UNDEFED  PNT_IN_RANGE
+UNDEFED  P3W1DINO                         UNDEFED  FIRE_SND
+UNDEFED  P4DATA                           UNDEFED  TRBOINGL41
+UNDEFED  P4W1DINO                         UNDEFED  GETCPNT
+UNDEFED  PAGE                             UNDEFED  ENEMY_START
+UNDEFED  PALM1                            UNDEFED  WHL_CENTER
+UNDEFED  PALM2                            UNDEFED  WHLXFER
+ffe58780 PALM_TABLE_1                     UNDEFED  SPBOING41
+UNDEFED  PALRAM                           UNDEFED  SPBOINGL41
+UNDEFED  PALSET                           UNDEFED  SET_TZPOS
+UNDEFED  PCMOSRET                         UNDEFED  SPBOING81
+UNDEFED  PCYCLEHI                         UNDEFED  FIND_CLOSE_MPNT
+UNDEFED  PCYCLELO                         UNDEFED  TRBOING81
+UNDEFED  PDRAW                            UNDEFED  ENEMIES
+UNDEFED  PINEAPPLEINIT                    UNDEFED  REXINIT
+UNDEFED  PINEAPPLESPIN                    UNDEFED  KILALLA8
+UNDEFED  PINK16                           UNDEFED  DELSHAD
+UNDEFED  PITINIT                          UNDEFED  DINO_CENTER
+UNDEFED  PLAYER                           UNDEFED  GETCENT
+UNDEFED  PLAYMATION                       UNDEFED  WHLINIT
+UNDEFED  PNT_IN_RANGE                     UNDEFED  TRBOING01
+ffe5c4c0 POINT                            UNDEFED  TROG_CENTER
+ffe5d600 POWERCMOS                        UNDEFED  XFERPROC_ID
+UNDEFED  POWERRET                         UNDEFED  TRBOING41
+ffe62f20 POWERTST                         UNDEFED  DUMCRETS
+UNDEFED  PRCLSP                           UNDEFED  SCRNLR
+UNDEFED  PRCSLP                           UNDEFED  FLAMESM2
+UNDEFED  PRESENTS                         UNDEFED  BAK2MODS
+UNDEFED  PRINTF                           UNDEFED  INSERT_OBJ
+UNDEFED  PSTOP                            UNDEFED  REXHED
+ffe31870 PT_ENTRY                         UNDEFED  GETBPAL
+ffe2f7b0 PUT_ADJ                          UNDEFED  P1W1DINO
+ffe3dbd0 P_CONT                           UNDEFED  TROG_PIT
+ffe248c0 P_FORK                           UNDEFED  BAKLST
+ffe3d9f0 P_START                          UNDEFED  BSPSTP3
+UNDEFED  QSNDRST                          UNDEFED  SPSTP0
+UNDEFED  RADI1                            UNDEFED  BTRTEETH
+UNDEFED  RADI2                            UNDEFED  APLAYDONE
+UNDEFED  RADI3                            UNDEFED  BTRHAND5
+UNDEFED  RADI4                            UNDEFED  BSPTORP2
+UNDEFED  RANDOM                           UNDEFED  GWENHED
+UNDEFED  RANGRAND                         UNDEFED  BTRHAND1
+ffe3b840 RCOIN                            UNDEFED  BTRHAND2
+ffe32870 RC_BYTEI                         UNDEFED  SKYCOLOR
+ffe32800 RC_BYTE                          UNDEFED  GETANIXY
+ffe32b70 RC_LONGI                         UNDEFED  TAR1a
+ffe32a50 RC_LONG                          UNDEFED  PINEAPPLESPIN
+ffe328d0 RC_WORD                          UNDEFED  SPIKEHED
+ffe329f0 RC_WORDI                         UNDEFED  STRCNRMOS
+UNDEFED  RD15FONT                         UNDEFED  P4W1DINO
+UNDEFED  RD20FONT                         UNDEFED  CREDITBGND
+UNDEFED  RD5FONT                          UNDEFED  SCRNTL
+UNDEFED  RD7FONT                          UNDEFED  DINOLOAD
+ffe66090 READ_DIP                         UNDEFED  DINO_START
+UNDEFED  RECLAIM_LAND                     UNDEFED  KILBOBJ
+ffe5c550 RECTANGLE                        UNDEFED  BUYWIN_Z
+UNDEFED  RED16                            UNDEFED  DINO_ADD_VEL
+UNDEFED  RESTP0                           UNDEFED  TROGINIT
+UNDEFED  REXATAB                          UNDEFED  KILOBJ_ALL
+UNDEFED  REXHED                           UNDEFED  GAME_DIFFICULTY
+UNDEFED  REXINIT                          UNDEFED  SPIKEATAB
+ffe57070 ROCK_START                       UNDEFED  SLEEP_SWITCHX
+ffe58460 ROCK_TABLE_1                     UNDEFED  WATER_CYCLE
+ffe26960 ROM_NAME                         UNDEFED  OBJECTS_ON
+ffe31900 ROM_PTRS                         UNDEFED  FIREINIT
+ffe00db0 SCIDONE                          UNDEFED  MULTI_MAKE
+ffe3b5c0 SCOIN                            UNDEFED  BLOOPHED
+ffe04950 SCORAREA                         UNDEFED  OBJECTS_OFF
+UNDEFED  SCORBLOOP                        UNDEFED  OBJLST
+UNDEFED  SCORCONTINUE                     UNDEFED  EGG_DIVISOR
+ffe06870 SCORE                            UNDEFED  BLOOPATAB
+ffe083e0 SCORE2XOBJ                       UNDEFED  PRESENTS
+ffe083a0 SCOREOBJ                         UNDEFED  IRQSKYE
+ffe04aa0 SCOREHILITE                      UNDEFED  DISPLAYON
+ffe06a20 SCORE_IF_ACTIVE                  UNDEFED  TROG_START
+UNDEFED  SCORGAMEOVER                     UNDEFED  SOUNDSUP
+UNDEFED  SCORGWEN                         UNDEFED  PLAYMATION
+UNDEFED  SCORINSERT                       UNDEFED  DINO_VEL
+ffe02f10 SCORPROC                         UNDEFED  PDRAW
+UNDEFED  SCORREX                          UNDEFED  PCYCLELO
+UNDEFED  SCORSPIKE                        UNDEFED  FIXED3
+UNDEFED  SCORTOPLAY                       UNDEFED  WAVE
+UNDEFED  SCREXP32                         UNDEFED  PSTOP
+UNDEFED  SCRNLR                           UNDEFED  STRCNRMO
+UNDEFED  SCRNRELV                         UNDEFED  P4DATA
+UNDEFED  SCRNTL                           UNDEFED  SCORGAMEOVER
+UNDEFED  SCRTST                           UNDEFED  SLINEVEL
+UNDEFED  SEE_STARS                        UNDEFED  BSPSHP0F4
+ffe07f50 SEND2SCR                         UNDEFED  WARMSET
+ffe07ec0 SENDOBJ                          UNDEFED  GETOBJ
+ffe1d0d0 SET_AVGWAVE                      UNDEFED  EXISTP
+ffe744e0 SET_COIN_ADJ                     UNDEFED  HEXTOASC
+UNDEFED  SET_MZPOS                        UNDEFED  GETPRC
+ffe319d0 SET_PAGE                         UNDEFED  GPLAYNUM
+UNDEFED  SET_TZPOS                        UNDEFED  P2DATA
+UNDEFED  SET_ZPOS                         UNDEFED  P1DATA
+UNDEFED  SHROOMINIT                       UNDEFED  PINK16
+UNDEFED  SINTRAM                          UNDEFED  DTIME
+UNDEFED  SKULL                            UNDEFED  RED16
+UNDEFED  SKYCOLOR                         UNDEFED  DELOBJ
+UNDEFED  SKYUP                            UNDEFED  P3DATA
+ffe3f7a0 SLAM                             UNDEFED  SUCIDE
+UNDEFED  SLEEP_SWITCHX                    UNDEFED  SCORCONTINUE
+UNDEFED  SLINEVEL                         UNDEFED  OBJ_TO_PNT
+UNDEFED  SMACK_CNT                        UNDEFED  NPLAYERS
+UNDEFED  SMACK_SCREEN                     UNDEFED  SKYUP
+UNDEFED  SMOKESTAR41                      UNDEFED  GANIOF
+UNDEFED  SNDRES                           UNDEFED  TITLEBMOD
+UNDEFED  SNDSND                           UNDEFED  LM_PRINTF
+UNDEFED  SOUNDSUP                         UNDEFED  GPLAYD
+UNDEFED  SPBOING01                        UNDEFED  TROG_ATT_APPEAR
+UNDEFED  SPBOING41                        UNDEFED  CLRPDATA
+UNDEFED  SPBOING81                        UNDEFED  GAMERASE
+UNDEFED  SPBOINGL41                       UNDEFED  BTRBROW
+UNDEFED  SPIKEATAB                        UNDEFED  STORE_ZVAL
+UNDEFED  SPIKEHED                         UNDEFED  PCYCLEHI
+UNDEFED  SPLAYER_NUM                      UNDEFED  BACKGROUND1
+UNDEFED  SPSQP4FF1                        UNDEFED  DINO_FRANIM
+UNDEFED  SPSQP4FF2                        UNDEFED  TROGATAB
+UNDEFED  SPSQP4FF3                        UNDEFED  SHROOMINIT
+UNDEFED  SPSTP0                           UNDEFED  FILL_SCRN
+UNDEFED  SPWAP4F1                         UNDEFED  blooptung
+UNDEFED  START_FIRE_LR                    UNDEFED  BSPSHP0F3
+UNDEFED  START_INVINCIBILITY              UNDEFED  BAKMODS
+ffe24550 STD_BORD                         UNDEFED  BTRHAIR
+UNDEFED  STFOBJ                           UNDEFED  PITINIT
+ffe2ee30 STORE_AUDIT                      UNDEFED  OWINDOW
+UNDEFED  STORE_ZVAL                       UNDEFED  TITLE2BMOD
+01000070 STORY_MODE                       UNDEFED  MAKE_OBJ
+UNDEFED  STRANBACK                        UNDEFED  AUTOEOFF
+ffe3a400 STRCAT                           UNDEFED  BART2
+UNDEFED  STRCNRMO                         UNDEFED  PLAYER
+UNDEFED  STRCNRMS                         UNDEFED  BGND_UD1
+UNDEFED  STRCNRMOS                        UNDEFED  CHANGOID
+UNDEFED  STRCNRM                          UNDEFED  GAME_STATE
+ffe5ca70 STRINGCENTER                     UNDEFED  GAMEOVER
+ffe5c7a0 STRING                           UNDEFED  RD5FONT
+UNDEFED  STRINGF                          UNDEFED  FAST_TIME
+UNDEFED  STRINGF_RAM                      UNDEFED  DUMCOLL
+UNDEFED  STRLNRM                          UNDEFED  SCORBLOOP
+UNDEFED  STRLNRMS                         UNDEFED  KILOBJ
+UNDEFED  STRNGLEN                         UNDEFED  PAGE
+UNDEFED  STRNGRAM                         UNDEFED  L_MESS
+UNDEFED  STRRNRMS                         UNDEFED  ANI
+UNDEFED  STRRNRM                          UNDEFED  STRCNRM
+ffe22710 ST_STICK                         UNDEFED  FINDPAL
+ffe078e0 SUBLIFE                          UNDEFED  BSPSHP0F6
+UNDEFED  SUCIDE                           UNDEFED  DUXPAL
+ffe662d0 SWITCHTEST                       UNDEFED  YELLOW16
+UNDEFED  SYSCOPY                          UNDEFED  BSPSHP0F7
+ffe5ae90 SYSFONT                          UNDEFED  FREEOBJ
+UNDEFED  TAR1a                            UNDEFED  REXATAB
+UNDEFED  TARINIT                          UNDEFED  SCRNRELV
+UNDEFED  TAR_ANIM1                        UNDEFED  GETFPAL
+ffe3dec0 TIMEINIT                         UNDEFED  SCORINSERT
+ffe3df60 TIMEINT                          UNDEFED  LM_FINIS
+UNDEFED  TITLE2BMOD                       UNDEFED  PRCSLP
+UNDEFED  TITLEBMOD                        UNDEFED  SCRTST
+ffe30500 TOD_TAB                          UNDEFED  LM_SETUP
+UNDEFED  TOMOVE                           UNDEFED  MYOINIT
+UNDEFED  TRANBACK                         UNDEFED  FILLAREA
+UNDEFED  TRBOING01                        UNDEFED  COLOR_START
+UNDEFED  TRBOING41                        UNDEFED  ALLOFF
+UNDEFED  TRBOING81                        UNDEFED  SCORTOPLAY
+UNDEFED  TRBOINGL41                       UNDEFED  WDOGDIS
+UNDEFED  TRBOP0F1                         UNDEFED  STRRNRM
+UNDEFED  TRBOP0F2                         UNDEFED  RD15FONT
+UNDEFED  TRBOP0F3                         UNDEFED  SCORREX
+UNDEFED  TRBOP0F4                         UNDEFED  STRRNRMS
+UNDEFED  TRBOP0F5                         UNDEFED  TROGCAVE2
+UNDEFED  TREATP0F8                        UNDEFED  KILALL
+UNDEFED  TREATP4F8                        UNDEFED  SCORSPIKE
+UNDEFED  TROGATAB                         UNDEFED  STFOBJ
+UNDEFED  TROGCAVE1                        UNDEFED  CURPAL
+UNDEFED  TROGCAVE2                        UNDEFED  DELETE_OBJ
+UNDEFED  TROGCAVSIN                       UNDEFED  ALLOW_CONTINUE
+UNDEFED  TROGHED                          UNDEFED  STRNGLEN
+ffe58240 TROGHENG1                        UNDEFED  QSNDRST
+UNDEFED  TROGINIT                         UNDEFED  SCORGWEN
+ffe582e0 TROGSKULL1                       UNDEFED  STRINGF_RAM
+ffe58380 TROGSKULL2                       UNDEFED  GSCRNREL
+UNDEFED  TROGWOBBLE_D                     UNDEFED  ONESND
+UNDEFED  TROGWXFER                        UNDEFED  SNDSND
+UNDEFED  TROG_ATT_APPEAR                  UNDEFED  STRLNRM
+UNDEFED  TROG_CENTER                      UNDEFED  CALLPLAY
+UNDEFED  TROG_CLUB_ATAB                   UNDEFED  SNDRES
+UNDEFED  TROG_NEW_PNT                     UNDEFED  BSPSHP0F8
+UNDEFED  TROG_PIT                         UNDEFED  BSPSHP0F11
+UNDEFED  TROG_SHADOW_UPDATE               UNDEFED  WAVEEGGS
+UNDEFED  TROG_START                       UNDEFED  BSPSHP0F12
+UNDEFED  TRSTP0                           UNDEFED  TAR_ANIM1
+ffe30c80 TRYADD                           UNDEFED  WAVE_START
+ffe20510 UHOH                             UNDEFED  BSPSHP0F10
+ffe06230 UPDSL                            UNDEFED  FLOWERINIT
+ffe866f0 USA_1                            UNDEFED  BTRHED
+ffe86720 USA_2                            UNDEFED  BLNKAREA
+ffe86750 USA_3                            UNDEFED  GAME_INTRO
+ffe86780 USA_4                            UNDEFED  RECLAIM_LAND
+ffe867b0 USA_ELECTITLE                    UNDEFED  BSPSHP0F13
+ffe31f80 VAL_TAB                          UNDEFED  GWENATAB
+UNDEFED  VBONCR1                          UNDEFED  OBJ_OFF
+UNDEFED  VBONCR3                          UNDEFED  P2W1DINO
+UNDEFED  VOBLIT1                          UNDEFED  TRSTP0
+UNDEFED  VTRANBACK                        UNDEFED  BGND_UD2
+ffe1ede0 WAIT_BUT                         UNDEFED  RD7FONT
+UNDEFED  WARMSET                          UNDEFED  INSOBJ
+UNDEFED  WATER_CYCLE                      UNDEFED  PINEAPPLEINIT
+UNDEFED  WAVEEGGS                         UNDEFED  GPALOBJSTF
+UNDEFED  WAVE_START                       UNDEFED  TROG_NEW_PNT
+UNDEFED  WAVE                             UNDEFED  BTRBLINK1
+ffe32850 WC_BYTE                          UNDEFED  OBJ_ON
+ffe32bd0 WC_BYTEI                         UNDEFED  PRINTF
+ffe32df0 WC_LONGI                         UNDEFED  BTRBLINK2
+ffe32d30 WC_LONG                          UNDEFED  FRANIM
+ffe32c20 WC_WORD                          UNDEFED  GSAGOF
+ffe32ce0 WC_WORDI                         UNDEFED  BTREYE
+UNDEFED  WDISTAB                          UNDEFED  OBJEXP32
+UNDEFED  WDOGDIS                          UNDEFED  CLR_SCRN
+UNDEFED  WDOGRAM                          UNDEFED  BTRBEARD
+UNDEFED  WHEEL410                         UNDEFED  SCREXP32
+UNDEFED  WHLATAB                          UNDEFED  GRAMINIT
+UNDEFED  WHLINIT                          UNDEFED  BARL2
+UNDEFED  WHLXFER                          UNDEFED  BSPSHP0F9
+UNDEFED  WHL_CENTER                       UNDEFED  P3W1DINO
+UNDEFED  WIPEOUT                          UNDEFED  CLRBGND
+ffe20490 WOLF                             UNDEFED  EGG_START
+UNDEFED  WTRANBACK                        UNDEFED  STRCNRMS
+ffe3b6c0 XCOIN                            UNDEFED  BSPWP4F1
+UNDEFED  XFERPROC_ID                      UNDEFED  BSPWP4F2
+UNDEFED  YELLOW16                         UNDEFED  BSPWP4F3
+UNDEFED  ZIG1                             UNDEFED  WIPEOUT
+ffe58580 ZIG_TABLE_1                      UNDEFED  OGPIT11
+ffe585e0 ZIG_TABLE_2                      UNDEFED  FIRE_ANIMII
+UNDEFED  bflesh                           UNDEFED  BSPWP4F4
+UNDEFED  bfur                             UNDEFED  BSPWP4F7
+UNDEFED  blooptung                        UNDEFED  TARINIT
+UNDEFED  gray15                           UNDEFED  BALLYMID
+UNDEFED  trancave1                        UNDEFED  BSPWP4F5
+UNDEFED  trancave2                        UNDEFED  RD20FONT
+UNDEFED  trogcol                          UNDEFED  BSPWP4F6
+
+[577 symbols]

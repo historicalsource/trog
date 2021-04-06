@@ -1,0 +1,880 @@
+!<arch>
+subrm.asm/      618166888   0     0     0       157       `
+*
+*SUBTRACT REGISTER FROM MEMORY
+*	SUBRM	REG,ADDR,FIELD SIZE
+*
+SUBRM	$MACRO	P1,P2,P3
+	MOVE	:P2:,A14,:P3:
+	SUB	:P1:,A14
+	MOVE	A14,:P2:,:P3:
+	$END
+
+
+addrm.asm/      618166888   0     0     0       150       `
+*
+*ADD REGISTER TO MEMORY
+*	ADDRM	REG,ADDR,FIELD SIZE
+*
+ADDRM	$MACRO	P1,P2,P3
+	MOVE	:P2:,A14,:P3:
+	ADD	:P1:,A14
+	MOVE	A14,:P2:,:P3:
+	$END
+
+incm.asm/       618166888   0     0     0       147       `
+*
+*INCREMENT MEMORY
+*	INCM	ADDR,FIELD SIZE
+*A14 DESTROYED
+**
+INCM	$MACRO	P1,P2
+	MOVE	:P1:,A14,:P2:
+	INC	A14
+	MOVE	A14,:P1:,:P2:
+	$END
+
+
+decm.asm/       625360894   0     0     0       342       `
+*
+*DECREMENT MEMORY
+*	DECM	ADDR,FIELD SIZE
+*RETURNS:
+*	N = 1 IF THE RESULT IS NEGATIVE, 0 OTHERWISE.
+*	C = 1 IF THERE IS A BORROW, 0 OTHERWISE.
+*	Z = 1 IF THE RESULT IS 0, 0 OTHERWISE.
+*	V = 1 IF THERE IS AN OVERFLOW, 0 OTHERWISE.
+*NOTE: A14 DESTROYED
+DECM	$MACRO	P1,P2
+	MOVE	:P1:,A14,:P2:
+	DEC	A14
+	MOVE	A14,:P1:,:P2:
+	$END
+
+subm.asm/       618166888   0     0     0       207       `
+*
+*SUBTRACT MEMORY
+*	SUBM	ADDR,REG,FIELD SIZE
+*SUBTRACTS ADDRESS FROM REGISTER
+*A14 DESTROYED, 'A' REGISTER TYPE INSTRUCTIONS ONLY
+*
+SUBM	$MACRO	P1,P2,P3
+	MOVE	:P1:,A14,:P3:
+	SUB	A14,:P2:
+	$END
+
+
+addm.asm/       618166888   0     0     0       144       `
+*
+*ADD MEMORY
+*	ADDM	ADDR,REG,FIELD SIZE
+*ADDS ADDRESS FROM REGISTER
+*
+ADDM	$MACRO	P1,P2,P3
+	MOVE	:P1:,A14,:P3:
+	ADD	A14,:P2:
+	$END
+
+negm.asm/       618166888   0     0     0       154       `
+*
+*NEGATE MEMORY
+*	NEGM	ADDR,FIELD SIZE
+*NEGATES ADDRESS CONTENTS
+*
+NEGM	$MACRO	P1,P2
+	MOVE	:P1:,A14,:P2:
+	NEG	A14
+	MOVE	A14,:P1:,:P2:
+	$END
+
+cmpm.asm/       618166888   0     0     0       203       `
+*
+*COMPARE MEMORY
+*	CMPM	ADDR,REG,FIELD SIZE
+*COMPARES ADDRESS TO REGISTER
+*A14 DESTROYED, 'A' REGISTER TYPE INSTRUCTIONS ONLY
+*
+CMPM	$MACRO	P1,P2,P3
+	MOVE	:P1:,A14,:P3:
+	CMP	A14,:P2:
+	$END
+
+
+clrm.asm/       618166888   0     0     0       184       `
+*
+*CLEAR MEMORY
+*	CLRM	ADDR,FIELD SIZE
+*CLEARS ADDRESS CONTENTS
+*A14 DESTROYED, 'A' REGISTER TYPE INSTRUCTIONS ONLY
+*
+CLRM	$MACRO	P1,P2
+	CLR	A14
+	MOVE	A14,:P1:,:P2:
+	$END
+
+comm.asm/       618166888   0     0     0       215       `
+*
+*COMPLEMENT MEMORY
+*	COMM	ADDR,FIELD SIZE
+*COMPLEMENTS ADDRESS CONTENTS
+*A14 DESTROYED, 'A' REGISTER TYPE INSTRUCTIONS ONLY
+*
+COMM	$MACRO	P1,P2
+	MOVE	:P1:,A14,:P2:
+	NOT	A14
+	MOVE	A14,:P1:,:P2:
+	$END
+
+
+sllm.asm/       618166888   0     0     0       230       `
+*
+*SHIFT LEFT MEMORY
+*	SLLM	SHIFT COUNT,ADDR,FIELD SIZE
+*SHIFTS ADDRESS CONTENTS
+*A14 DESTROYED, 'A' REGISTER TYPE INSTRUCTIONS ONLY
+*
+SLLM	$MACRO	P1,P2,P3
+	MOVE	:P2:,A14,:P3:
+	SLL	:P1:,A14
+	MOVE	A14,:P2:,:P3:
+	$END
+
+sram.asm/       618166888   0     0     0       258       `
+*
+*SHIFT RIGHT ARITHMETIC MEMORY
+*	SRAM	SHIFT COUNT,ADDR,FIELD SIZE
+*SHIFTS ADDRESS CONTENTS
+*A14 DESTROYED, 'A' REGISTER TYPE INSTRUCTIONS ONLY
+*
+SRAM	$MACRO	P1,P2,P3
+	MOVE	:P2:,A14,:P3:
+	SEXT	A14,:P3:
+	SRA	:P1:,A14
+	MOVE	A14,:P2:,:P3:
+	$END
+
+srlm.asm/       618166888   0     0     0       256       `
+*
+*SHIFT RIGHT LOGICAL MEMORY
+*	SRLM	SHIFT COUNT,ADDR,FIELD SIZE
+*SHIFTS ADDRESS CONTENTS
+*A14 DESTROYED, 'A' REGISTER TYPE INSTRUCTIONS ONLY
+*
+SRLM	$MACRO	P1,P2,P3
+	MOVE	:P2:,A14,:P3:
+	ZEXT 	A14,:P3:
+	SRL	:P1:,A14
+	MOVE	A14,:P2:,:P3:
+	$END
+
+orm.asm/        618166890   0     0     0       188       `
+*
+*OR REGISTER WITH MEMORY
+*	ORM	REGISTER,MEMORY ADDRESS,FIELD SIZE
+*NOTE: A14 IS DESTROYED
+*
+ORM	$MACRO	R1,M1,T1
+	MOVE	:M1:,A14,:T1:	
+	OR	:R1:,A14
+	MOVE	A14,:M1:,:T1:
+	$ENDM
+
+orim.asm/       618166890   0     0     0       201       `
+*
+*OR IMMEADIATE WITH MEMORY
+*	ORIM	IMMEADIATE VALUE,MEMORY ADDRESS,FIELD SIZE
+*NOTE: A14 IS DESTROYED
+*
+ORIM	$MACRO	I1,M1,T1
+	MOVE	:M1:,A14,:T1:	
+	ORI	:I1:,A14
+	MOVE	A14,:M1:,:T1:
+	$ENDM
+
+
+andnim.asm/     618166890   0     0     0       212       `
+*
+*AND NOT IMMEADIATE WITH MEMORY
+*	ANDNIM	IMMEADIATE VALUE,MEMORY ADDRESS,FIELD SIZE
+*NOTE: A14 IS DESTROYED
+*
+ANDNIM	$MACRO	I1,M1,T1
+	MOVE	:M1:,A14,:T1:	
+	ANDNI	:I1:,A14
+	MOVE	A14,:M1:,:T1:
+	$ENDM
+
+bset.asm/       618166890   0     0     0       201       `
+*
+*BIT SET
+*	BSET	BIT# 0-31(KONSTANT OR REGISTER),REGISTER TO SET BIT IN
+* NOTE: A14 IS DESTROYED, 'A' FILE REGISTERS ONLY
+*
+BSET	$MACRO	P1,R1
+	MOVK	1,A14
+	SLL	:P1:,A14
+	OR	A14,:R1:
+	$END
+
+
+bclr.asm/       618166890   0     0     0       203       `
+*
+*BIT CLR
+*	BCLR	BIT# 0-31(KONSTANT OR REGISTER),REGISTER TO CLR BIT IN
+* NOTE: A14 IS DESTROYED, 'A' FILE REGISTERS ONLY
+*
+BCLR	$MACRO	P1,R1
+	MOVK	1,A14
+	SLL	:P1:,A14
+	ANDN	A14,:R1:
+	$END
+
+
+setz.asm/       618166890   0     0     0       162       `
+*
+*SET THE Z BIT
+*	SETZ
+* STATUS BITS:
+*		N Unaffected
+*		C Unaffected
+*		Z 1
+*		V Unaffected
+* NOTE: A14 IS CLEARED
+*
+SETZ	$MACRO
+	CLR	A14
+	$END
+
+clrz.asm/       618166890   0     0     0       173       `
+*
+*CLR THE Z BIT
+*	CLRZ
+* STATUS BITS:
+*		N Unaffected
+*		C Unaffected
+*		Z 0
+*		V Unaffected
+* NOTE: A14 IS SET TO 1
+*
+CLRZ	$MACRO
+	CLR	A14
+	NOT	A14
+	$END
+
+
+notc.asm/       618166890   0     0     0       226       `
+*
+*COMPLEMENT THE C BIT
+*	NOTC
+* STATUS BITS:
+*		N Unaffected
+*		C Complemented
+*		Z Undefined
+*		V Unaffected
+* NOTE: A14 IS SET TO 1
+*
+NOTC	$MACRO
+	GETST	A14
+	XORI	CBIT,A14		;COMPLEMENT C
+	PUTST	A14	
+	$END
+
+sleep.asm/      618166890   0     0     0       202       `
+*
+*PROCESS SLEEP CONSTANT
+*P1=SLEEP TIME CONSTANT 1-FFFF LOADED INTO A0
+*RET ADDR ON STACK
+*
+SLEEP	$MACRO	P1
+	$IF	P1 < 33
+	MOVK	:P1:,A0
+	$ELSE	
+	MOVI	:P1:,A0
+	$ENDIF
+	CALLA	PRCSLP
+	$END
+
+sleepr.asm/     625876396   0     0     0       142       `
+*
+*SLEEPR - PROCESS SLEEP ON REGISTER
+*	SLEEPR	REG
+*RETURN ADDR ON STACK
+*
+SLEEPR	$MACRO	REG1
+	MOVE	:REG1:,A0
+	CALLA	PRCSLP
+	$END
+
+sloopr.asm/     618166892   0     0     0       178       `
+*
+*PROCESS LOOP SLEEP REGISTER
+*P1=REGISTER CONTAINING SLEEP TIME 1-FFFF, P2 =WAKEUP ADDR-->A7
+*
+SLOOPR	$MACRO	P1,P2
+	MOVE	:P1:,A0
+	MOVI	:P2:,A7,L
+	JAUC	PRCLSP
+	$END
+
+create.asm/     618166892   0     0     0       135       `
+*
+*PROCESS CREATION MACRO
+*P1=ID-->A1, P2=PC-->A7
+*
+CREATE	$MACRO	P1,P2
+ 	MOVI	:P1:,A1
+	MOVI	:P2:,A7,L
+	CALLA	GETPRC
+	$END
+
+
+killit.asm/     618166892   0     0     0       127       `
+*
+*KILL PROCESS(ES)
+*P1=ID-->A0,P2=MASK-->A1
+*
+KILLIT	$MACRO	P1,P2
+	MOVI	:P1:,A0
+	MOVI	:P2:,A1
+	CALLA	KILALL
+	$END
+
+
+die.asm/        618166892   0     0     0       58        `
+*
+*CALL IT QUITS
+*
+DIE	$MACRO
+	JAUC	SUCIDE
+	$END
+
+jsrp.asm/       618166892   0     0     0       193       `
+*
+*PROCESS JUMP SUBROUTINE
+*P1=ADDRESS OF SLEEPING PROCESS
+*A7 IS USED FOR PC STORAGE
+*
+JSRP	$MACRO	P1
+	GETPC	A7
+	ADDI    060h,A7
+	MOVE	A7,-*A12,L	;PUSH RET ADDR
+	JAUC	:P1:
+	$END
+
+
+jsrpr.asm/      618166892   0     0     0       226       `
+*
+*PROCESS JUMP SUBROUTINE ON REGISTER
+*R1=REGISTER CONTAINING ADDRESS OF SLEEPING PROCESS
+*A7 IS USED FOR PC STORAGE
+*
+JSRPR	$MACRO	R1
+	GETPC	A7
+	ADDI    040h,A7
+	MOVE	A7,-*A12,L	;PUSH RET ADDR
+	JUMP	:R1:
+	$END
+
+matchp.asm/     618166892   0     0     0       186       `
+*FIND MATCHING PROCESS(ES), BRANCH IF ONE WAS FOUND
+*P1=ID-->A0,P2=MASK-->A1,P3=BRANCH LABEL
+MATCHP	$MACRO	P1,P2,P3
+	MOVI	:P1:,A0
+	MOVI	:P2:,A1
+	CALLA	EXISTP
+	JANZ	:P3:
+	$END
+
+nomatchp.asm/   618166892   0     0     0       194       `
+*FIND MATCHING PROCESS(ES), BRANCH IF NONE WERE FOUND
+*P1=ID-->A0,P2=MASK-->A1,P3=BRANCH LABEL
+NOMATCHP $MACRO	P1,P2,P3
+	 MOVI	:P1:,A0
+	 MOVI	:P2:,A1
+	 CALLA	EXISTP
+	 JAZ	:P3:
+	 $END
+
+retp.asm/       618166892   0     0     0       189       `
+*
+*RETURN FROM SLEEPING SUBROUTINE
+*A7 IS USED FOR PC STORAGE
+*STATUS REGISTER IS NOT AFFECTED
+*	
+RETP	$MACRO	
+	MMFM	A12,A7		;PULL RETURN ADDR, W/O ZAPPING STAT
+	EXGPC	A7
+	$END
+
+
+push.asm/       618166892   0     0     0       155       `
+*PUSH REGISTER(S) ONTO THE STACK
+*USAGE: ONE OPERAND -> PUSH OP   2 OR MORE OPS -> PUSH (OP1,OP2,...,OPN)
+PUSH	$MACRO	REG
+	MOVE :REG:,-*SP,1
+	$END
+
+
+pull.asm/       618166892   0     0     0       159       `
+*PULL REGISTER(S) OFF OF THE STACK
+*USAGE: ONE REGISTER -> PULL REG   2 OR MORE REGS -> PULL (REG1,REG2,...,REGN)
+PULL	$MACRO	REG
+	MMFM	SP,:REG:
+	$END
+
+
+pushp.asm/      618166892   0     0     0       121       `
+*PUSH REGISTER ONTO THE PROCESS STACK
+*USAGE: ONE OPERAND -> PUSH REG
+PUSHP	$MACRO	REG
+	MOVE :REG:,-*A12,L
+	$END
+
+
+pullp.asm/      618166892   0     0     0       124       `
+*PULL REGISTER(S) OFF OF THE PROCESS STACK
+*USAGE: ONE REGISTER -> PULL REG 
+PULLP	$MACRO	REG
+	MMFM	A12,:REG:
+	$END
+
+pushw.asm/      618166892   0     0     0       128       `
+*PUSH LOW WORD OF REGISTER ON TO STACK
+*ONE REGISTER ONLY!
+*USAGE: PUSHW REG
+PUSHW	$MACRO	REG
+	MOVE :REG:,-*SP,0
+	$END
+
+pullw.asm/      618166892   0     0     0       129       `
+*PULL LOW WORD OF REGISTER OFF OF STACK
+*ONE REGISTER ONLY!
+*USAGE: PULLW REG
+PULLW	$MACRO	REG
+	MOVE *SP+,:REG:,0
+	$END
+
+
+sound1.asm/     618166892   0     0     0       118       `
+*MAKE A SINGLE SOUND USING THE GSP SOUND PROCESSOR
+SOUND1	$MACRO SNDNUM
+	MOVI :SNDNUM:,A0
+	CALLA ONESND
+	$END
+
+longnull.asm/   618166892   0     0     0       82        `
+*NULL LONG WORD							 
+LONGNULL:$MACRO	 
+	.LONG 0								 
+	$END								 
+
+swap.asm/       618166892   0     0     0       159       `
+* Swap contents of two registers that reside in same file
+
+SWAP	$MACRO R1,R2
+	XOR    :R1.S:,:R2.S:
+	XOR    :R2.S:,:R1.S:
+	XOR    :R1.S:,:R2.S:
+	$END
+
+
+test.asm/       618166892   0     0     0       75        `
+* Test a register for zero
+TEST	$MACRO R1
+	MOVE	:R1.S:,:R1.S:
+	$END
+
+
+jrxeq.asm/      618169910   0     0     0       87        `
+*
+*JUMP RELATIVE IF Rd.X = Rs.X AFTER A CMPXY
+JRXEQ	$MACRO	P1
+	JRXZ	P1.S
+	$END
+
+
+jrxne.asm/      618169910   0     0     0       89        `
+*
+*JUMP RELATIVE IF Rd.X <> Rs.X AFTER A CMPXY
+JRXNE	$MACRO	P1
+	JRXNZ	P1.S
+	$END
+
+
+jrxge.asm/      618169910   0     0     0       89        `
+*
+*JUMP RELATIVE IF Rd.X >= Rs.X AFTER A CMPXY
+JRXGE	$MACRO	P1
+	JRXNN	P1.S
+	$END
+
+
+jrxlt.asm/      618169910   0     0     0       87        `
+*
+*JUMP RELATIVE IF Rd.X < Rs.X AFTER A CMPXY
+JRXLT	$MACRO	P1
+	JRXN	P1.S
+	$END
+
+
+jryeq.asm/      618169910   0     0     0       87        `
+*
+*JUMP RELATIVE IF Rd.Y = Rs.Y AFTER A CMPXY
+JRYEQ	$MACRO	P1
+	JRYZ	P1.S
+	$END
+
+
+jryne.asm/      618169910   0     0     0       89        `
+*
+*JUMP RELATIVE IF Rd.Y <> Rs.Y AFTER A CMPXY
+JRYNE	$MACRO	P1
+	JRYNZ	P1.S
+	$END
+
+
+jryge.asm/      618169910   0     0     0       89        `
+*
+*JUMP RELATIVE IF Rd.Y >= Rs.Y AFTER A CMPXY
+JRYGE	$MACRO	P1
+	JRYNN	P1.S
+	$END
+
+
+jrylt.asm/      618169910   0     0     0       87        `
+*
+*JUMP RELATIVE IF Rd.Y < Rs.Y AFTER A CMPXY
+JRYLT	$MACRO	P1
+	JRYN	P1.S
+	$END
+
+
+halfxy.asm/     624899136   0     0     0       203       `
+*
+*DIVIDE THE X AND Y HALVES OF A REGISTER BY 2
+*	HALFXY	REG
+* NOTE: A14 IS TRASHED
+*
+HALFXY	$MACRO	R1
+	MOVY	:R1:,A14
+	SEXT	:R1:
+	SRA	1,:R1:
+	SRA	17,A14
+	SLL	16,A14
+	MOVY	A14,:R1:
+	$ENDM
+
+
+dispon.asm/     619809712   0     0     0       128       `
+*
+*TURN THE DISPLAY SYSTEM ON
+*	DISPON
+*NOTE: A14 IS SET TO 1
+DISPON	$MACRO
+	MOVK	1,A14
+	MOVE	A14,@DISPLAYON,W
+	$END
+
+dispoff.asm/    619809712   0     0     0       127       `
+*
+*TURN THE DISPLAY SYSTEM OFF
+*	DISPOFF
+*NOTE: A14 IS CLEARED
+DISPOFF	$MACRO
+	CLR	A14
+	MOVE	A14,@DISPLAYON,W
+	$END
+
+
+sloop.asm/      618166890   0     0     0       194       `
+*
+*PROCESS LOOP SLEEP
+*P1=SLEEP TIME -->A0, P2 =WAKEUP ADDR-->A7
+*
+SLOOP	$MACRO	P1,P2
+	$IF	P1 < 33
+	MOVK	:P1:,A0
+	$ELSE	
+	MOVI	:P1:,A0
+	$ENDIF
+	MOVI	:P2:,A7,L
+	JAUC	PRCLSP
+	$END
+
+sleepm.asm/     625876364   0     0     0       174       `
+*
+*SLEEPM - PROCESS SLEEP ON MEMORY LOCATION
+*	SLEEPM	LOCATION,FIELD
+*RETURN ADDR ON STACK
+*
+SLEEPM	$MACRO	MLOC,FIELD
+	MOVE	:MLOC:,A0,:FIELD:
+	CALLA	PRCSLP
+	$END
+
+pause.asm/      632622260   0     0     0       139       `
+*
+*	TIMED PAUSE
+*
+PAUSE   $MACRO TIME, REG
+         MOVI :TIME:, :REG:, L
+LABEL?:  NOP
+         DSJS :REG:, LABEL?
+        $END
+
+
+fcall.asm/      632622260   0     0     0       185       `
+*
+*FCALL - FUNCTION CALL WITHOUT USING THE SYSTEM STACK
+*	FCALL	ROUTINE, BREG
+*
+FCALL   $MACRO NAME, BREG
+         MOVI  :NAME:, :BREG:, L
+         EXGPC :BREG:
+        $END
+
+
+fret.asm/       632622260   0     0     0       146       `
+*
+*FRET - FUNCTION RETURN WITHOUT USING THE SYSTEM STACK
+*	FCALL	ROUTINE, BREG
+*
+FRET    $MACRO BREG
+         EXGPC :BREG:
+        $END
+
+adjust.asm/     632678846   0     0     0       404       `
+**************************************************************************
+*								         *
+* ADJUST - GET THE VALUE OF A CMOS GAME ADJUSTMENT.			 *
+* 	ADJUST	ADJUST_LOC						 *
+* RETURNS:								 *
+* A0 = VALUE OF GAME ADJUSTMENT						 *
+*								         *
+**************************************************************************
+ADJUST	$MACRO	P1
+	MOVI	:P1:,A0
+	CALLA	GET_ADJ
+	$END
+
+absxy.asm/      628361544   0     0     0       233       `
+*
+*ABSXY - FIGURE THE ABSOLUTE VALUES OF THE [Y,X] HALVES OF A REGISTER
+*	ABSXY	REG
+* NOTE: A14 IS TRASHED
+*
+ABSXY	$MACRO	R1
+	MOVY	:R1:,A14
+	SRA	16,A14
+	ABS	A14
+	SLL	16,A14
+	SEXT	:R1:
+	ABS	:R1:
+	MOVY	A14,:R1:
+	$ENDM
+
+
+soundoff.asm/   635283678   0     0     0       137       `
+*
+*TURN THE SOUND PROCESSOR OFF
+*	SOUNDOFF
+*NOTE: A14 IS SET TO ONE
+SOUNDOFF $MACRO
+	MOVK	1,A14
+	MOVE	A14,@SOUNDSUP,W
+	$END
+
+
+
+soundon.asm/    635283678   0     0     0       127       `
+*
+*TURN THE SOUND PROCESSOR ON
+*	SOUNDOFF
+*NOTE: A14 IS CLEARED
+SOUNDON $MACRO
+	CLR	A14
+	MOVE	A14,@SOUNDSUP,W
+	$END
+
+
+audit.asm/      635488090   0     0     0       361       `
+**************************************************************************
+*								         *
+* AUDIT - INCREMENT A CMOS AUDIT COUNTER ONCE.				 *
+* 	AUDIT	AUDIT_LOC						 *
+* NOTE: TRASHES A0 							 *
+*								         *
+**************************************************************************
+AUDIT	$MACRO	P1
+	MOVI	:P1:,A0
+	CALLA	AUD1
+	$END
+
+
+auditn.asm/     635488090   0     0     0       387       `
+**************************************************************************
+*								         *
+* AUDITN - INCREMENT A CMOS AUDIT COUNTER N TIMES.			 *
+* 	AUDIT	AUDIT_LOC,N						 *
+* NOTE: TRASHES A0,A1 							 *
+*								         *
+**************************************************************************
+AUDITN	$MACRO	P1,P2
+	MOVI	:P1:,A0
+	MOVI	:P2:,A1
+	CALLA	AUD
+	$END
+
+
+lockup.asm/     635815058   0     0     0       64        `
+*
+*LOCKUP MACRO
+*
+LOCKUP	$MACRO
+	CALLA	DUMPPRINT
+	$END
+
+pauseon.asm/    636237182   0     0     0       134       `
+*
+*PAUSE THE CURRENT GAME ACTION
+*	PAUSEON
+*NOTE: A14 IS SET TO 1
+PAUSEON	$MACRO
+	MOVK	1,A14
+	MOVE	A14,@PAUSE_GAME,W
+	$END
+
+pauseoff.asm/   636237228   0     0     0       129       `
+*
+*RESUME CURRENT GAME ACTION
+*	PAUSEOFF
+*NOTE: A14 IS CLEARED
+PAUSEOFF $MACRO
+	CLR	A14
+	MOVE	A14,@PAUSE_GAME,W
+	$END
+
+
+movim.asm/      644003012   0     0     0       378       `
+**************************************************************************
+*								         *
+* MOVIM - MOVE IMMEADIATE VALUE TO MEMORY				 *
+* 									 *
+* 	MOVIM	IMMEADIATE,MEMORY,FIELD SIZE				 *
+*								         *
+**************************************************************************
+MOVIM	$MACRO	IMM,MEM,FS
+	MOVI	:IMM:,A14
+	MOVE	A14,:MEM:,:FS:
+	$ENDM
+
+subim.asm/      644015866   0     0     0       325       `
+*SUBIM - SUBTRACT AN IMMEADIATE VALUE FROM MEMORY.
+*	SUBIM	IMMEADIATE,MEMORY,FIELD SIZE
+*RETURNS:
+*	N = 1 IF THE RESULT IS NEGATIVE
+*	C = 1 IF THERE WAS A BORROW
+*	Z = 1 IF THE RESULT IS 0
+*	V = 1 IF THERE IS AN OVERFLOW
+SUBIM	$MACRO	IMM,MEM,FS
+	MOVE	:MEM:,A14,:FS:
+	SUBI	:IMM:,A14
+	MOVE	A14,:MEM:,:FS:
+	$ENDM
+
+
+addim.asm/      644015868   0     0     0       316       `
+*ADDIM - ADD AN IMMEADIATE VALUE TO MEMORY.
+*	ADDIM	IMMEADIATE,MEMORY,FIELD SIZE
+*RETURNS:
+*	N = 1 IF THE RESULT IS NEGATIVE
+*	C = 1 IF THERE IS A CARRY
+*	Z = 1 IF THE RESULT IS 0
+*	V = 1 IF THERE IS AN OVERFLOW
+ADDIM	$MACRO	IMM,MEM,FS
+	MOVE	:MEM:,A14,:FS:
+	ADDI	:IMM:,A14
+	MOVE	A14,:MEM:,:FS:
+	$ENDM
+
+clrb.asm/       649098396   0     0     0       364       `
+**************************************************************************
+*								         *
+* CLRB - CLEAR MEMORY BYTE						 *
+* 	CLRM	ADDR							 *
+* A14 DESTROYED, 'A' REGISTER TYPE INSTRUCTIONS ONLY			 *
+*								         *
+**************************************************************************
+CLRB	$MACRO	P1
+	CLR	A14
+	MOVB	A14,:P1:
+	$END
+
+movib.asm/      649098396   0     0     0       365       `
+**************************************************************************
+*								         *
+* MOVIB - MOVE IMMEADIATE VALUE TO MEMORY BYTE				 *
+* 									 *
+* 	MOVIM	IMMEADIATE,MEMORY					 *
+*								         *
+**************************************************************************
+MOVIB	$MACRO	IMM,MEM
+	MOVI	:IMM:,A14
+	MOVB	A14,:MEM:
+	$ENDM
+
+
+addix.asm/      650046804   0     0     0       362       `
+**************************************************************************
+*								         *
+* ADDIX - ADD WORD TO X PORTION OF A REGISTER				 *
+* 									 *
+* 	ADDIX	WORD,REGISTER						 *
+*								         *
+**************************************************************************
+ADDIX	$MACRO	IMM,REG
+	MOVI	:IMM:,A14,W
+	ADDXY	A14,:REG:
+	$ENDM
+addiy.asm/      650046804   0     0     0       375       `
+**************************************************************************
+*								         *
+* ADDIY - ADD WORD TO Y PORTION OF A REGISTER				 *
+* 									 *
+* 	ADDIY	WORD,REGISTER						 *
+*								         *
+**************************************************************************
+ADDIY	$MACRO	IMM,REG
+	MOVI	:IMM:,A14
+	SLL	16,A14
+	ADDXY	A14,:REG:
+	$ENDM
+
+
+movix.asm/      650046804   0     0     0       364       `
+**************************************************************************
+*								         *
+* MOVIX - MOVE WORD TO X PORTION OF A REGISTER				 *
+* 									 *
+* 	MOVIX	WORD,REGISTER						 *
+*								         *
+**************************************************************************
+MOVIX	$MACRO	IMM,REG
+	MOVI	:IMM:,A14,W
+	MOVX	A14,:REG:
+	$ENDM
+
+moviy.asm/      650046804   0     0     0       369       `
+**************************************************************************
+*								         *
+* MOVIY - MOVE WORD TO Y PORTION OF A REGISTER				 *
+* 									 *
+* 	MOVIY	WORD,REGISTER						 *
+*								         *
+**************************************************************************
+MOVIY	$MACRO	IMM,REG
+	MOVI	:IMM:*10000H,A14
+	MOVY	A14,:REG:
+	$ENDM
+
+

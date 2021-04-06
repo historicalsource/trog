@@ -1,0 +1,24 @@
+		PAC-TROG version PA3-PAC 8/15/90
+
+	File		checksum	ROM size	Function
+	----		--------	--------	--------
+	TROGU4.PP	$D75C		27512		sound
+	TROGU19.PP	$D05A		27512		sound
+	TROGU20.PP	$5558		27512		sound
+	TROGU89.PP	$E999		27010		program
+	TROGU90.PP	$E772		27010		image
+	TROGU91.PP	$7676		27010		image
+	TROGU95.PP	$7006		27010		image
+	TROGU96.PP	$19CD		27010		image
+	TROGU97.PP	$2E80		27010		image
+	TROGU105.PP	$2298		27010		program
+	TROGU106.PP	$1317		27010		image
+	TROGU107.PP	$7CCE		27010		image
+	TROGU111.PP	$CB32		27010		image
+	TROGU112.PP	$1059		27010		image
+	TROGU113.PP	$737D		27010		image
+
+
+
+
+

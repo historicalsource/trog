@@ -1,0 +1,17 @@
+.struct trogstrc.tvs
+.wp NOAUTOE,W
+.wp P1DATA,A
+.wp P2DATA,A
+.wp P3DATA,A
+.wp P4DATA,A
+.km !f1 @D*OBJLST\ OBJ\ OLINK"CR"
+.km !F1 @D*OFREE\ OBJ\ OLINK"CR"
+.km !f2 @D*ACTIVE\ PROC\ PLINK"CR"
+.km !F2 @D*FREE\ PROC\ PLINK"CR"
+.km !f3 @D*ACTIVE\ DINO\ PLINK"CR"
+.km !F3 @D"END"\ DINO\ PLINK"CR"
+.km !f4 @DP1DATA\ PLAYER\ *"CR"
+.km !f8 @DFPALRAM\ PALETTE\ *"CR"
+.km !f9 @DMOVEMAP\ MOVEENTRY\ *"CR"
+.km !f10 @DCMOVEMAP\ CMOVEENTRY\ *"CR"
+

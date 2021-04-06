@@ -1,0 +1,332 @@
+	.DATA
+CTROSKF3:
+	.word	120,134,61,-5
+	.long	>206AF60
+	.long	bflesh
+CTROFRF3:
+	.word	85,110,57,-5
+	.long	>208A5E0
+	.long	bfur
+CTROWHF4:
+	.word	61,58,82,-17
+	.long	>209D460
+	.long	trogcol
+CTROARM1F3:
+	.word	38,74,64,11
+	.long	>20A4860
+	.long	bflesh
+CTROEY1F9:
+	.word	19,18,7,-28
+	.long	>20AA4E0
+	.long	trogcol
+CTROBRW1F9:
+	.word	14,10,-1,-20
+	.long	>20AB020
+	.long	bfur
+CTROBLK1F12:
+	.word	20,17,30,-15
+	.long	>20AB520
+	.long	bflesh
+CTRODINGF12:
+	.word	61,48,50,15
+	.long	>20ABFC0
+	.long	trogcol
+CHALK41:
+	.word	43,23,36,12
+	.long	>20B1FC0
+	.long	trogcol
+BUBSTAR1:
+	.word	47,33,-21,-58
+	.long	>20B3F60
+	.long	trogcol
+CTROSKF4:
+	.word	129,131,87,-10
+	.long	>20B70E0
+CTROSKF8:
+	.word	102,138,67,-2
+	.long	>20D8D40
+CTROSKF9:
+	.word	87,131,59,-9
+	.long	>20F4DC0
+CTROSKF10:
+	.word	112,136,73,-6
+	.long	>210B600
+CTROSKF11:
+	.word	131,135,96,-9
+	.long	>2129200
+CTROSKF12:
+	.word	130,137,92,-2
+	.long	>214BEE0
+CTROFRF4:
+	.word	81,121,50,-10
+	.long	>216F400
+CTRPFRF8:
+	.word	78,127,55,-2
+	.long	>21831A0
+CTROFRF9:
+	.word	79,119,51,-9
+	.long	>2196F20
+CTROFRF10:
+	.word	81,129,53,-6
+	.long	>21A98A0
+CTROFRF11:
+	.word	77,115,56,-11
+	.long	>21BEB40
+CTROFRF12:
+	.word	77,126,56,-2
+	.long	>21D0AC0
+CTROWHF8:
+	.word	25,41,32,-20
+	.long	>21E45C0
+CTROWHF10:
+	.word	32,19,35,-56
+	.long	>21E69A0
+CTROWHF11:
+	.word	24,36,30,-20
+	.long	>21E7CA0
+CTROWHF12:
+	.word	27,42,35,-16
+	.long	>21E97A0
+CTROARM2F3:
+	.word	32,64,59,3
+	.long	>21EBC60
+CTROARM3F3:
+	.word	47,75,68,13
+	.long	>21EFC60
+CTROARM4F3:
+	.word	46,58,42,-4
+	.long	>21F6CE0
+CTROARM5F3:
+	.word	61,33,87,-43
+	.long	>21FC3E0
+CTROARM6F3:
+	.word	24,20,48,-50
+	.long	>22005E0
+CTROARM7F3:
+	.word	39,37,62,-27
+	.long	>22014E0
+CTROARM8F3:
+	.word	44,25,66,-51
+	.long	>2204320
+CTROARM9F3:
+	.word	25,31,45,-28
+	.long	>2206580
+CTROARM10F3:
+	.word	32,58,57,-4
+	.long	>22080A0
+CTROWH1F3:
+	.word	10,18,48,11
+	.long	>220BAA0
+CTROWH2F3:
+	.word	11,16,42,3
+	.long	>220C160
+CTROWH3F3:
+	.word	12,20,56,12
+	.long	>220C760
+CTROWH4F3:
+	.word	16,8,12,-9
+	.long	>220CEE0
+CTROWH5F3:
+	.word	8,11,83,-43
+	.long	>220D2E0
+CTROWH7F3:
+	.word	5,6,42,-29
+	.long	>220D5A0
+CTROWH8F3:
+	.word	3,2,52,-52
+	.long	>220D720
+CTROWH9F3:
+	.word	8,6,28,-28
+	.long	>220D760
+CTROWH10F3:
+	.word	6,8,39,-4
+	.long	>220D8E0
+CTROARM1F9:
+	.word	43,34,-16,-48
+	.long	>220DAE0
+CTROARM2F9:
+	.word	28,61,-14,-17
+	.long	>22109A0
+CTROARM3F9:
+	.word	28,57,-14,-21
+	.long	>2213F00
+CTROARM4F9:
+	.word	29,49,-13,-29
+	.long	>22170E0
+CTROEY2F9:
+	.word	19,18,7,-28
+	.long	>221A1E0
+CTROEY3F9:
+	.word	19,18,7,-28
+	.long	>221AD20
+CTROEY4F9:
+	.word	19,18,7,-28
+	.long	>221B860
+CTROBRW2F9:
+	.word	18,12,3,-24
+	.long	>221C3A0
+CTROBLK2F12:
+	.word	18,18,29,-15
+	.long	>221CB20
+CHALK72:
+	.word	38,17,38,-18
+	.long	>221D660
+CHALK83:
+	.word	18,26,66,-28
+	.long	>221EBA0
+CHALK64:
+	.word	13,8,59,-51
+	.long	>221FBE0
+CHALK105:
+	.word	14,24,33,-4
+	.long	>221FFE0
+CHALK96:
+	.word	22,26,45,-4
+	.long	>2220BE0
+CHALK67:
+	.word	14,23,27,-28
+	.long	>2221F60
+CHALK88:
+	.word	7,4,49,-51
+	.long	>2222AE0
+CHALK59:
+	.word	34,15,82,-39
+	.long	>2222BE0
+CHALK813:
+	.word	26,19,53,-35
+	.long	>2223CC0
+CHALK914:
+	.word	35,11,56,-28
+	.long	>2224D60
+CHALK215:
+	.word	31,12,31,4
+	.long	>22259C0
+CHALK916:
+	.word	31,26,51,-27
+	.long	>22265C0
+CHALK917:
+	.word	25,23,54,-32
+	.long	>2227FC0
+CHALK118:
+	.word	34,18,38,12
+	.long	>22293E0
+CHALK419:
+	.word	28,19,24,7
+	.long	>222A820
+CHALK1020:
+	.word	30,7,34,-2
+	.long	>222B8C0
+CHALK721:
+	.word	9,27,44,-6
+	.long	>222BFC0
+CHALK222:
+	.word	9,25,32,1
+	.long	>222C9E0
+BUBSTAR2:
+	.word	85,58,17,-34
+	.long	>222D340
+BUBBLE1a:
+	.word	95,69,69,-6
+	.long	>22372C0
+BUBBLE1b:
+	.word	20,15,-27,-60
+	.long	>22441C0
+BUBBLE1c:
+	.word	13,10,-56,-83
+	.long	>2244B20
+BUBBLE2a:
+	.word	93,65,67,-8
+	.long	>2245020
+BUBBLE2b:
+	.word	19,15,-28,-61
+	.long	>2251320
+BUBBLE2c:
+	.word	12,10,-56,-82
+	.long	>2251C80
+BUBBLE2aa:
+	.word	85,79,60,12
+	.long	>2252040
+BUBBLE3a:
+	.word	93,64,65,-8
+	.long	>225F980
+BUBBLE3b:
+	.word	20,16,-28,-60
+	.long	>226B980
+BUBBLE3c:
+	.word	13,10,-55,-82
+	.long	>226C380
+DRCHICK2:
+	.word	82,81,53,-39
+	.long	>226C880
+DRCHICK4:
+	.word	108,105,53,-15
+	.long	>2279D20
+DRBURG2:
+	.word	100,104,59,-25
+	.long	>228FF80
+DRBURG4:
+	.word	115,113,59,-16
+	.long	>22A4480
+DRPIZZA2:
+	.word	109,83,56,-28
+	.long	>22BDE20
+DRPIZZA4:
+	.word	109,102,56,-18
+	.long	>22D00A0
+DRCLUB4:
+	.word	125,89,64,-38
+	.long	>22E65A0
+DRFIRE2:
+	.word	75,99,46,-23
+	.long	>22FC9A0
+DRFIRE4:
+	.word	93,114,50,-15
+	.long	>230B4C0
+DRWHEEL2:
+	.word	103,94,56,-24
+	.long	>2320AC0
+DRWHEEL4:
+	.word	112,104,57,-23
+	.long	>2333C40
+DRSPRING2:
+	.word	106,87,62,-33
+	.long	>234A840
+DRSPRING4:
+	.word	115,96,62,-28
+	.long	>235CDE0
+EMC22:
+	.word	58,49,46,-45
+	.long	>23729E0
+EMC24:
+	.word	93,62,46,-35
+	.long	>23785C0
+LILCHICK:
+	.word	30,32,0,0
+	.long	>2383FC0
+LILSPRING:
+	.word	31,31,0,0
+	.long	>2385FC0
+LILWHEEL:
+	.word	34,30,0,0
+	.long	>2387EC0
+LILFIRE:
+	.word	26,29,0,0
+	.long	>238A080
+LILCLUB:
+	.word	35,25,0,0
+	.long	>238B9E0
+LILPIZZA:
+	.word	30,26,0,0
+	.long	>238D600
+LILEMC2:
+	.word	34,13,0,0
+	.long	>238F000
+DRCLUB2:
+	.word	120,84,62,-41
+	.long	>238FEA0
+	.long	gray15
+LILBURG:
+	.word	30,31,0,0
+	.long	>23A39A0
+	.long	gray15
+	.TEXT

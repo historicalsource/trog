@@ -1,0 +1,46 @@
+
+  ISSUPPID							    ISSUPPID
+
+
+	Description:
+
+		Search a supplemental list for an object with
+	the given Object I.D.
+
+-----------------------------------------------------------------------------
+Inputs:
+	A0 = Object I.D. 
+	A1 = Supplemental list
+Returns:
+	 Z = Does not exist on supplemental list (A1 = 0)
+	NZ = Found on supplemental list. (A1 = ptr to object)
+Found in:
+	xUTIL.ASM
+-----------------------------------------------------------------------------
+
+
+  EXISTP							     EXISTP
+
+	Description:
+	
+		Scan the Active process list for a process with
+	the given Process I.D.
+
+-----------------------------------------------------------------------------
+Inputs:
+	A0 = 16 bit Process I.D. to scan
+	A1 = Mask
+Returns:
+	 Z = Not found (A0 = 0)
+	NZ = Found (A0 = ptr to process)
+Found in:
+	xPROC.ASM
+-----------------------------------------------------------------------------	
+Notes:
+	- Mask - A bit for bit mask of the Process I.D.
+		0 = Don't care
+		1 = Must match
+
+	- See macros MATCHP and NOMATCHP
+
+

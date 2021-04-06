@@ -1,0 +1,30 @@
+
+
+
+	       Specific Y-Unit hardware requirements for TROG
+	       ----------------------------------------------
+
+
+
+	Processor:	TMS34010 at 40 MHz.
+
+	DMA:		Revision 1
+
+	Resolution:	256 x 395 x 8 at 16KHz
+
+	Program ROM:	256K x 8
+
+	Image ROM:	2M x 8
+
+	Video RAM:	256K x 8
+
+	Scratch RAM:	128K x 8
+
+	Color RAM:	512 x 8 (minimum)
+
+	Sound ROM:	192K x 8
+
+	Colors/Object:	16
+
+	Palettes:	16
+

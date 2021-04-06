@@ -1,0 +1,2 @@
+GSPAR D TROGMACS ..\MACROS\%1
+

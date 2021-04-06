@@ -1,0 +1,145 @@
+	.DATA
+TRBOP0F2:
+	.word	35,34,17,-10
+	.long	>34AD900
+TRBOP0F3:
+	.word	26,41,11,4
+	.long	>34AFF40
+TRBOP0F4:
+	.word	42,37,19,10
+	.long	>34B2320
+TRBOP0F5:
+	.word	36,43,16,12
+	.long	>34B5600
+TRBOP04a:
+	.word	42,37,19,10
+	.long	>34B8660
+TRBOP1:
+	.word	39,38,18,11
+	.long	>34BB940
+TRBOP2:
+	.word	31,38,15,11
+	.long	>34BE8C0
+TRBOP3:
+	.word	24,40,9,10
+	.long	>34C0EC0
+TRBOP5:
+	.word	26,38,9,7
+	.long	>34C2CC0
+TRBOP6:
+	.word	34,39,12,6
+	.long	>34C4E00
+TRBOP7:
+	.word	41,36,16,6
+	.long	>34C79E0
+TRBOP4F1:
+	.word	27,32,10,-15
+	.long	>34CAB60
+TRBOP4F2:
+	.word	20,38,8,-7
+	.long	>34CC760
+TRBOP4F3:
+	.word	21,40,10,-1
+	.long	>34CDF20
+TRBOP4F4:
+	.word	23,38,9,10
+	.long	>34CFD20
+TRBOP4F5:
+	.word	22,39,11,10
+	.long	>34D19A0
+TRBOP8F1:
+	.word	30,30,13,-15
+	.long	>34D36E0
+TRBOP8F2:
+	.word	35,36,17,-8
+	.long	>34D54E0
+TRBOP8F3:
+	.word	29,37,13,1
+	.long	>34D7D60
+TRBOP8F4:
+	.word	42,36,18,5
+	.long	>34DA260
+TRBOP8F5:
+	.word	32,42,12,9
+	.long	>34DD3E0
+TRBOSTP0F1:
+	.word	35,35,17,-12
+	.long	>34DFDE0
+TRBOSTP0F2:
+	.word	40,36,19,-10
+	.long	>34E2540
+TRBOSTP0F3:
+	.word	41,35,20,-11
+	.long	>34E5240
+TRBOSTP0F4:
+	.word	36,33,17,-14
+	.long	>34E8260
+TRBOP4F4a:
+	.word	22,38,9,10
+	.long	>34EA780
+TRBOP8F4a:
+	.word	42,36,18,5
+	.long	>34EC400
+TRBOSHAD2:
+	.word	18,8,9,3
+	.long	>34EF580
+TRBOSHAD3:
+	.word	10,6,5,3
+	.long	>34EFA80
+SPRINGSM11a:
+	.word	14,32,0,24
+	.long	>34EFCC0
+SPRINGSM11b:
+	.word	15,14,-11,17
+	.long	>34F0CC0
+SPRINGSM11c:
+	.word	18,20,0,-8
+	.long	>34F13C0
+SPRINGSM7a:
+	.word	27,60,0,52
+	.long	>34F2040
+SPRINGSM7b:
+	.word	28,26,-23,39
+	.long	>34F54C0
+SPRINGSM7c:
+	.word	34,36,0,-8
+	.long	>34F6B80
+SPRINGSM5a:
+	.word	37,81,0,69
+	.long	>34F9400
+SPRINGSM5b:
+	.word	38,36,-37,25
+	.long	>34FF940
+SPRINGSM5c:
+	.word	45,60,0,-12
+	.long	>3502640
+SPRINGSMA3a:
+	.word	49,125,0,99
+	.long	>3508040
+SPRINGSMA3b:
+	.word	48,50,-49,48
+	.long	>3514B60
+SPRINGSMA3c:
+	.word	68,78,0,-26
+	.long	>3519660
+SPRINGSMA1a:
+	.word	77,66,0,167
+	.long	>3523C20
+SPRINGSMA1b:
+	.word	60,41,0,101
+	.long	>352E120
+SPRINGSMA1c:
+	.word	124,49,0,61
+	.long	>3532E00
+SPRINGSMA1d:
+	.word	133,76,0,12
+	.long	>353EBE0
+TRBOSHAD1:
+	.word	20,10,10,3
+	.long	>3552EE0
+	.long	FIXED3
+TRBOP0F1:
+	.word	29,25,14,-21
+	.long	>3553520
+	.long	trogcol
+	.TEXT

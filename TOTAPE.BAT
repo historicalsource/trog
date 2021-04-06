@@ -1,0 +1,6 @@
+C:
+CD \EZTAPE
+EZTAPE BACKUP /w 1 /v /m 1 /b rhs /f C:\EZTAPE\TROGPBAK.BPF
+EZTAPE BACKUP /w 1 /v /m 1 /b rhs /f C:\EZTAPE\TROGIBAK.BPF
+
+

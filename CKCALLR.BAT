@@ -1,0 +1,66 @@
+DEL CALLR.ERR
+DEL JRUC.ERR
+e TROGDISP.ASM -mjruc
+e TROGRAM.ASM -mjruc
+e TROG.ASM -mjruc
+e TROGUTIL.ASM -mjruc
+e TROGPALL.ASM -mjruc
+e TROGPROC.ASM -mjruc
+e TROGSND.ASM -mjruc
+e TROGBGND.ASM -mjruc
+e TROGPOST.ASM -mjruc
+e TROGBAR.ASM -mjruc
+e TROGDINO.ASM -mjruc
+e TROGMISC.ASM -mjruc
+e TROGTEXT.ASM -mjruc
+e TROGCOL.ASM -mjruc
+e TROGTROG.ASM -mjruc
+e TROGEGGS.ASM -mjruc
+e TROGMAPS.ASM -mjruc
+e TROGDDAT.ASM -mjruc
+e TROGTDAT.ASM -mjruc
+e TROGSCOR.ASM -mjruc
+e TROGATT.ASM -mjruc
+e TROGENEM.ASM -mjruc
+e TROGMENU.ASM -mjruc
+e TROGJUNK.ASM -mjruc
+e TROGHSTD.ASM -mjruc
+e TROGDUTL.ASM -mjruc
+e TROGDTST.ASM -mjruc
+e TROGCOIN.ASM -mjruc
+e TROGADJ.ASM -mjruc
+e SYSFONT.ASM -mjruc
+RENAME CALLR.ERR JRUC.ERR
+e TROGDISP.ASM -mcallr
+e TROGRAM.ASM -mcallr
+e TROG.ASM -mcallr
+e TROGUTIL.ASM -mcallr
+e TROGPALL.ASM -mcallr
+e TROGPROC.ASM -mcallr
+e TROGSND.ASM -mcallr
+e TROGBGND.ASM -mcallr
+e TROGPOST.ASM -mcallr
+e TROGBAR.ASM -mcallr
+e TROGDINO.ASM -mcallr
+e TROGMISC.ASM -mcallr
+e TROGTEXT.ASM -mcallr
+e TROGCOL.ASM -mcallr
+e TROGTROG.ASM -mcallr
+e TROGEGGS.ASM -mcallr
+e TROGMAPS.ASM -mcallr
+e TROGDDAT.ASM -mcallr
+e TROGTDAT.ASM -mcallr
+e TROGSCOR.ASM -mcallr
+e TROGATT.ASM -mcallr
+e TROGENEM.ASM -mcallr
+e TROGMENU.ASM -mcallr
+e TROGJUNK.ASM -mcallr
+e TROGHSTD.ASM -mcallr
+e TROGDUTL.ASM -mcallr
+e TROGDTST.ASM -mcallr
+e TROGCOIN.ASM -mcallr
+e TROGADJ.ASM -mcallr
+e SYSFONT.ASM -mcallr
+
+
+

@@ -1,0 +1,59 @@
+-	Chain Reaction of some sort. When you box an area, the walls go
+	in all four directions until they hit the edge or encounter another
+	box situation.
+
+-	Box a bigger area than just 1 x 1.
+
+X	Caveman throws a runaway wheel that destroys all in its path until
+	it reaches the edge of the playfield or gets BOXED!
+
+-	Bonus wave type, Jewels or Prizes appear in the center of each
+	square. The only way to get a jewel is to box in(capture) that
+	area.
+
+-	Switch modes during gameplay, just like pinball. For instance
+	Have a mode where all scores are double. Or a mode where the
+	Cavemen are on the run. The reason I thought of this is because
+	I was listening to TAXI music and heard the mball tune. I love
+	changes in flow. It makes things much more exciting. So let's
+	do something of that sort and with music as cool as TAXI.
+
+-	Two types of Buy-in:
+		1)	Straight foward any player can buy-in as long
+			as the game is game is in play. Also, one player
+			games will be allowed to continue from where they
+			left off.
+
+		2)	Other players can buy-in while game is in play.	
+			No continuation time is offered at the end of
+			the game. It's over.
+
+X	When you've maxed out your bars, the eldest should flash.
+
+-	Plant prizes:
+		Brain Food
+		Speed
+		Bad Shroom (slow motion dude)
+
+X	Add adjustment that disallows high score to date entry.
+
+-	Bonus Wave, the footrace. Let the players bang on their fire
+	buttons to make the dino move faster. First one to the finish
+	wins.
+
+-	Something that lays down invincible bones.
+
+-	Bonus Wave, Hidden prizes. Have TROG run out and bury a bunch of
+	stuff while the players are watching.  Then, let the dinosaurs out
+	and try to find all of the buried treasure. Could do a Rally X thing.
+	If you pick up the right one first then your scores are two X.
+
+-	Upper wave, all eggs appear then disappear, you have to find
+	them in order to get home.
+
+-	Bonus Wave, give 30 seconds too collect all of the presents you
+	can, no enemies, just obstacles.
+
+-	Stringer, when there is a position delta, reflect that change
+	in the thing that stores the last line position for carriage return.
+

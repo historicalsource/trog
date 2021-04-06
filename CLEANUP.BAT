@@ -1,0 +1,17 @@
+C:\BIN\SYSTEM "TROG"
+DEL *.A0*
+DEL *.C0*
+DEL *.O0*
+DEL *.T0*
+DEL *.P0*
+DEL *.H0*
+CD SOUND
+DEL *.P0*
+C:\BIN\SYSTEM "IMG"
+DEL *.L0*
+DEL *.I0*
+DEL *.B0*
+C:\BIN\SYSTEM "TROG"
+
+
+

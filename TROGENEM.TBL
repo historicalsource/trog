@@ -1,0 +1,154 @@
+	.DATA
+FLAMEBIG1:
+	.word	14,27,5,18
+	.long	>3464980
+FLAMEBIG2:
+	.word	19,34,8,25
+	.long	>3465700
+FLAMEBIG3:
+	.word	20,29,6,19
+	.long	>3466C40
+FLAMEBIG4:
+	.word	18,28,7,19
+	.long	>3467E60
+FLAMEBIG5:
+	.word	20,30,9,21
+	.long	>3468FE0
+FLAMEBIG6:
+	.word	20,32,9,22
+	.long	>346A2A0
+FLAMEBIG7:
+	.word	19,29,8,19
+	.long	>346B6A0
+FLAMEBIG8:
+	.word	19,26,9,16
+	.long	>346C8C0
+FLAMEOUT1:
+	.word	14,15,5,7
+	.long	>346D900
+FLAMEOUT2:
+	.word	11,17,3,8
+	.long	>346E080
+FLAMEOUT3:
+	.word	12,12,2,3
+	.long	>346E6E0
+FLAMEOUT4:
+	.word	8,9,1,0
+	.long	>346EB60
+FLAMEOUT5:
+	.word	5,14,-1,7
+	.long	>346EDA0
+FLAMEOUT6:
+	.word	11,20,3,11
+	.long	>346F120
+FLAMEOUT7:
+	.word	7,26,1,17
+	.long	>346F8A0
+FLAMEOUT8:
+	.word	5,30,0,21
+	.long	>346FF20
+FLAMESM2:
+	.word	15,25,6,15
+	.long	>34706A0
+FLAMESM3:
+	.word	16,18,6,9
+	.long	>3471320
+FLAMESM4:
+	.word	15,18,5,9
+	.long	>3471C20
+FLAMESM5:
+	.word	16,20,5,11
+	.long	>3472520
+FLAMESM6:
+	.word	16,22,5,12
+	.long	>3472F20
+FLAMESM7:
+	.word	18,18,6,9
+	.long	>3473A20
+FLAMESM8:
+	.word	17,16,6,6
+	.long	>3474560
+SMOKESTAR02:
+	.word	8,9,3,-44
+	.long	>3474F60
+SMOKESTAR03:
+	.word	9,8,3,-44
+	.long	>34751A0
+SMOKESTAR42:
+	.word	8,9,-11,-37
+	.long	>34754A0
+SMOKESTAR43:
+	.word	9,8,-11,-37
+	.long	>34756E0
+SMOKESTAR41:
+	.word	8,6,-11,-39
+	.long	>34759E0
+	.long	FIXED3
+SMOKESTAR01:
+	.word	8,6,3,-46
+	.long	>3475B60
+	.long	FIXED3
+FLAMESM1:
+	.word	15,17,6,8
+	.long	>3475CE0
+	.long	flame
+TAR5:
+	.word	23,20,13,9
+	.long	>3777880
+	.long	NOYLAND1
+OGPIT1:
+	.word	39,33,19,12
+	.long	>3778780
+	.long	NOYLAND1
+TAR1a:
+	.word	33,29,17,13
+	.long	>377B0C0
+TAR1b:
+	.word	34,28,17,12
+	.long	>377D160
+TAR1c:
+	.word	33,29,17,13
+	.long	>377F0E0
+TAR1d:
+	.word	33,30,17,13
+	.long	>3781180
+TAR2:
+	.word	37,30,19,13
+	.long	>3783340
+TAR3:
+	.word	26,20,13,10
+	.long	>37858C0
+TAR4:
+	.word	24,19,13,9
+	.long	>3786A40
+OGPIT2:
+	.word	39,33,19,12
+	.long	>3787880
+OGPIT3:
+	.word	39,33,19,12
+	.long	>378A1C0
+OGPIT4:
+	.word	39,33,19,12
+	.long	>378CB00
+OGPIT5:
+	.word	39,34,19,12
+	.long	>378F440
+OGPIT6:
+	.word	39,34,19,12
+	.long	>3791EC0
+OGPIT7:
+	.word	39,34,19,12
+	.long	>3794940
+OGPIT8:
+	.word	39,34,19,12
+	.long	>37973C0
+OGPIT9:
+	.word	39,34,19,12
+	.long	>3799E40
+OGPIT10:
+	.word	39,34,19,12
+	.long	>379C8C0
+OGPIT11:
+	.word	39,34,19,12
+	.long	>379F340
+	.TEXT

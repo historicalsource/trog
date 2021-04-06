@@ -1,0 +1,142 @@
+
+
+				    T R O G
+				  The Concept
+				  -----------
+
+	     TROG is designed as a four player dedicated, two player
+
+	kit game.  As the player, you have the power to draw walls between
+
+	posts arranged in an (m x n) grid with possible holes.  With your
+
+	wall drawing power you must concentrate on keeping your character
+
+	from walking out of the grid.  There will be four different
+
+	characters to choose from:
+
+	      Player 1)	REX the Red tyrannosaurus rex.
+	      Player 2)	ELVIS the Yellow stegosaurus.
+	      Player 3)	BLOOP the Blue brontosaurus.
+	      Player 4)	SPIKE the Purple triceratops.
+
+	     The object of each grid is to lead your dinosaur to all of 
+
+	his/her eggs.  Upon completion of this task, an exit for your
+
+	dinosaur will materialize.  This is the only safe way to exit the
+
+	grid.  As soon as the first dinosaur exits, the grid is complete.
+
+
+	     Between each grid bonuses will be awarded.  The first player
+
+	to complete the task will recieve a bonus plus something for each
+
+	egg collected.  The third grid and every fourth grid after will
+
+	be a bonus grid. This will offer the players a risk free challenge
+
+	for points.
+
+
+	     All sounds simple, however there exists an interesting "man"
+
+	named TROG.  His only ambition in life is to capture the dinosaurs.
+
+	At the outset of the game, TROG is equipped with only his bare hands
+
+	as tools.  Have no fear for TROG is somewhat of a human. He has the
+
+	ability to learn and adapt to his situation.  As the game progresses
+
+	TROG will invent more tools, and occasionally discover something
+
+	useful.  After every bonus grid, there will be an intermission that
+
+	depicts TROG as he invents or discovers.
+
+
+	     Our plan is to complete TROG for ACME 1990.  Below is the 
+
+	schedule that will make this a reality.
+
+
+
+
+
+
+
+
+							    T R O G
+ 						Project Schedule and Milestones
+						--------------------------------
+
+Date		Art	       			Software			Hardware		Mechanical
+----		---	       			--------			--------		----------
+
+August, 1989	- Complete basic "SPIKE"	- Wave Sequencing and Bonuses				- Start low cost cabinet,
+		  character animations.		- Add New "SPIKE" animations,				  4 players for dedicated. 
+		- Commence "TROG" character	  and personality traits.
+		  development.			- Area capture routines.
+
+
+September, 1989	- Finish "TROG" character.	- Start "TROG" intelligence.	
+		- Start "BLOOP" character.	- Add miscellaneous artwork.
+		- Create miscellaneous objects	- Improve character control								
+		  as needed.			  as needed.
+		- Create intro screen.
+
+October, 1989	- Finish "BLOOP" character.	- Continue "TROG" intelligence	- First pass of new	- Finalize control panel 		
+		- Vacation 7th - 15th.		  and playability.	      	  JAMMA pc available.	  layout.
+		- Start cabinet graphics.	- Vacation 7th - 15th
+		- Start "ELVIS" character.	- Add "BLOOP" character.  
+		- Create miscellaneous objects	- Debug JAMMA board and make
+		  as needed.			  necessary development tool
+		- Create "TROG invents club"	  changes.
+		  show.				- Add miscellaneous artwork.
+
+November, 1989	- Finish "ELVIS" character.	- Continue "TROG" development.	- Make JAMMA board
+		- Start "REX" character.	- Add "ELVIS" character.	  changes as necessary.
+		- Trog's inventions.		- Design and implement "Bonus"
+		- Create "TROG discovers fire"	  waves.
+		  show.				- Add miscellaneous artwork.
+		- Create miscellaneous objects
+		  as needed.
+
+December, 1989	- Finish "REX" character.	- Add "REX" character.		- Final JAMMA PCs in	- Final cabinet design
+		- Trog's inventions.		- Design different grid 	  process.		  due.
+		- Create simple characters	  layouts.
+		  "WANDA, PTERRY, SSSNAKE and	- Finish "TROG" with all of
+		   DINO 2000 B.C."		  his inventions.
+		- Create "TROG invents Wheel"	
+		  show.
+		- Final cabinet graphics due.
+
+January, 1990	- Submit all final images as	- Organize masked ROM images	- Take care of masked	- Show cabinets.
+		  of 1/1/90 for Masked ROMs. 	  and submit.			  ROM process.
+		- Finish any December tasks	- Add simple characters. 	- Final JAMMA pc
+		  leftover due to holidays.	- Finalize "TROG" using the	  available.
+		- Create "TROG discovers 	  "DINO 2000 B.C."
+		  WANDA" show.
+		- Create "TROG invents pogo
+		  stick" show.
+
+February, 1990	- Create "TROG invents DINO	- Add all shows and finalize	- Build-up show games.
+		  2000 B.C." show.		  wave order.
+		- Design bonus screen.		- Add new bonus screen.
+		- Create Title screen. 		- Add all difficulty parameters.
+		- Create clay fonts.		- Implement wave variations for
+						  waves after final original wave.
+						- Add fonts.
+
+March, 1990	- Touch up any necessary	- Attract Mode.			- Start masked ROM process
+		  images.			- Coin and Diagnostic routines.	  on remaining image ROMs.
+						- ACME show March 9th.
+						- On test after show
+
+April, 1990					- Commence prototype production.
+						- Commence full production by
+						  mid April.
+

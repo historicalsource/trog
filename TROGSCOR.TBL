@@ -1,0 +1,139 @@
+	.DATA
+SPFONT0:
+	.word	7,9,0,0
+	.long	>370FF80
+	.long	BLUE16
+SPFONT1:
+	.word	7,9,0,0
+	.long	>37101C0
+	.long	BLUE16
+SPFONT2:
+	.word	7,9,0,0
+	.long	>3710400
+	.long	DUXPAL
+SPFONT3:
+	.word	7,9,0,0
+	.long	>3710640
+	.long	BLUE16
+SPFONT4:
+	.word	7,9,0,0
+	.long	>3710880
+	.long	BLUE16
+SPFONT5:
+	.word	7,9,0,0
+	.long	>3710AC0
+	.long	BLUE16
+SPFONT6:
+	.word	7,9,0,0
+	.long	>3710D00
+	.long	BLUE16
+SPFONT7:
+	.word	7,9,0,0
+	.long	>3710F40
+	.long	BLUE16
+SPFONT8:
+	.word	7,9,0,0
+	.long	>3711180
+	.long	BLUE16
+SPFONT9:
+	.word	7,9,0,0
+	.long	>37113C0
+	.long	BLUE16
+ROCKLINE:
+	.word	158,5,0,0
+	.long	>3711600
+	.long	FIXED3
+SCR1000:
+	.word	29,10,14,4
+	.long	>2000540
+	.long	RED16
+P2BOXBONEh:
+	.word	87,4,0,0
+	.long	>2000F40
+	.long	BLUE16
+P2BOXBONEv:
+	.word	4,25,0,0
+	.long	>2001A40
+	.long	BLUE16
+P1BOXBONEh:
+	.word	87,4,0,0
+	.long	>2000F40
+	.long	RED16
+P1BOXBONEv:
+	.word	4,25,0,0
+	.long	>2001A40
+	.long	RED16
+P3BOXBONEh:
+	.word	87,4,0,0
+	.long	>2000F40
+	.long	YELLOW16
+P3BOXBONEv:
+	.word	4,25,0,0
+	.long	>2001A40
+	.long	YELLOW16
+P4BOXBONEh:
+	.word	87,4,0,0
+	.long	>2000F40
+	.long	PINK16
+P4BOXBONEv:
+	.word	4,25,0,0
+	.long	>2001A40
+	.long	PINK16
+SCR2000:
+	.word	31,10,16,4
+	.long	>2001D60
+SCR3000:
+	.word	31,10,15,4
+	.long	>2002760
+SCR4000:
+	.word	31,10,16,4
+	.long	>2003160
+SCR5000:
+	.word	31,10,16,4
+	.long	>2003B60
+SCR6000:
+	.word	31,10,16,4
+	.long	>2004560
+SCR7000:
+	.word	30,10,15,4
+	.long	>2004F60
+SCR8000:
+	.word	31,10,16,4
+	.long	>2005960
+SCR9000:
+	.word	31,10,15,4
+	.long	>2006360
+SCR10000:
+	.word	36,10,18,4
+	.long	>2006D60
+SCR15000:
+	.word	36,10,18,4
+	.long	>20078A0
+SCR20000:
+	.word	38,10,19,4
+	.long	>20083E0
+SCR25000:
+	.word	38,10,19,4
+	.long	>2009060
+SCR40000:
+	.word	38,10,19,4
+	.long	>2009CE0
+SCR80000:
+	.word	38,10,19,4
+	.long	>200A960
+SCR2X10K:
+	.word	54,10,27,4
+	.long	>200B5E0
+SCR2X20K:
+	.word	57,10,28,4
+	.long	>200C760
+SCR2X40K:
+	.word	57,10,28,4
+	.long	>200DA20
+SCR2X80K:
+	.word	57,10,29,4
+	.long	>200ECE0
+SCR500:
+	.word	21,9,10,4
+	.long	>2A0F380
+	.TEXT

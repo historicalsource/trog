@@ -1,0 +1,3 @@
+
+P TROGCOL      376 FFE65B80      JRNZ      CEDETECT
+	NOP
